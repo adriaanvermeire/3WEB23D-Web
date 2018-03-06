@@ -14,12 +14,3 @@
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/seksuele-intimidatie', function () {
-    return view('seksuelteIntimidatie');
-});
-Route::get('/wat-kan-je-zelf-doen', function () {
-    return view('wat-kan-je-zelf-doen');
-});
-Route::get('/statistieken', function () {
-    return view('statistieken');
-});
