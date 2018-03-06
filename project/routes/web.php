@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/', 'HomeController@index')->name('index');
+
+Route::group(['as' => 'admin.', 'prefix' => 'admin', 'middleware' => 'admin'], function(){
+  Route::get('/', 'AdminController@index')->name('index');
+  Route::post('/', 'AdminController@update')->name('update');
 });
