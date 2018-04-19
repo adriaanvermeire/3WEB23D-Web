@@ -12,6 +12,5 @@
 */
 
 Route::get('/', function () {
-    $test = DB::table('tekstblokken')->get();
-    return view('welcome',compact('test'));
+    return view('welcome');
 });
