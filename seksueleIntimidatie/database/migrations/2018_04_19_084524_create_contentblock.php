@@ -19,12 +19,12 @@ class CreateContentblock extends Migration
             $table->string('tekst');
             $table->string('titel')->nullable();
             $table->boolean('ishoofdblok');
-
+           
 
             $table->integer('websectionid');
             $table->foreign('websectionid')->references('id')->on('websection');
 
-            
+            $table->timestamps();
         });
     }
 

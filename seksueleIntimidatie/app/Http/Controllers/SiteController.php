@@ -9,4 +9,7 @@ class SiteController extends Controller
   function index(){
     return view('index');
   }
+
+
+ 
 }

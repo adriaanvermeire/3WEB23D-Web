@@ -17,7 +17,7 @@ class CreateWebsection extends Migration
         Schema::create('websection', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            
+            $table->timestamps();
         });
     }
 
