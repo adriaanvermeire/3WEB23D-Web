@@ -1,0 +1,244 @@
+/* Webfont: Antwerpen-Regular */
+
+@font-face {
+    font-family: "Antwerpen-Regular";
+    src: url("./fonts/Antwerpen/Antwerpen-Regular.eot");
+    src: url("./fonts/Antwerpen/Antwerpen-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Antwerpen/Antwerpen-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Antwerpen/Antwerpen-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Antwerpen/Antwerpen-Regular.svg#Antwerpen-Regular") format("svg");
+    /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Sun-Antwerpen-Regular */
+
+@font-face {
+    font-family: "Sun-Ant-Regular";
+    src: url("./fonts/SunAntwerpen_500/SunAntwerpen_500.eot");
+    src: url("./fonts/SunAntwerpen_500/SunAntwerpen_500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SunAntwerpen_500/SunAntwerpen_500.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SunAntwerpen_500/SunAntwerpen_500.svg#Antwerpen-Regular") format("svg");
+    /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Sun-Antwerpen-Regular-Italic */
+
+@font-face {
+    font-family: "Sun-Ant-Regular-Italic";
+    src: url("./fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.eot");
+    src: url("./fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.svg#Antwerpen-Regular") format("svg");
+    /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Content */
+
+h2 {
+    font-family: "Antwerpen-Regular";
+}
+
+p {
+    font-family: "Sun-Ant-Regular";
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    font-family: "Sun-Ant-Regular";
+    background-color: #0064B4;
+    color: white;
+    padding: 3%;
+}
+
+h5 {
+    padding: 2%;
+}
+
+main {
+    min-height: 60vh;
+
+}
+
+footer {
+    height: 40vh;
+}
+
+html {
+    min-height: 100%;
+    /* make sure it is at least as tall as the viewport */
+    position: relative;
+}
+
+body {
+    background-color: #f5c3cc;
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    padding-top: 20px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 20px 0 20px;
+    vertical-align: middle;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+header a {
+    font-family: "Sun-Ant-Regular";
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+header .nav-item {
+  color: white;
+  cursor: pointer;
+}
+
+header .nav-item:hover{
+  background-color: rgba(255,255,255,0.3);
+  color: black;
+}
+
+header a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    color: white;
+}
+
+header a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+header a:active::before {
+    background-color: white;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav {
+    z-index: 10;
+}
+
+header {
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover cover;
+    background-position: center;
+    background-position-y: top;
+    background-repeat: none;
+
+    min-height: 100vh;
+}
+
+.image {
+    padding: 0;
+    margin: 0;
+}
+
+.container-backgroundimage {
+    height: 100%;
+}
+
+.content-text {
+    color: white;
+}
+
+
+div.footer {
+    width: 100%;
+}
+
+.websection{
+    min-height: 100vh;
+}
+
+.header-title{
+    left: 0;
+
+    margin: auto;
+
+    position: absolute;
+    top: 10%;
+
+    width: 100%;
+    color: white;
+    font-family: Antwerpen-Regular;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(200,200,200,0.9);
+    z-index: 10;
+}
+
+.sticky .nav-item{
+  color: black;
+}
+
+
+.margin-top-fixed{
+    margin-top: 10vh;
+}
+
+.background-image {
+    background-image: url(pexels-photo-568024.jpeg);
+    position: absolute;
+    z-index: -10;
+    margin-top: -250px;
+    width: 100%;
+    height: 600px;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+}
+
+.active-area{
+    background-color: green;
+}
