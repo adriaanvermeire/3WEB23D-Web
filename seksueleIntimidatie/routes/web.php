@@ -12,25 +12,32 @@
 */
 use App\Websection;
 
-Route::get('/', 'SiteController@index');
+Route::get('/', 'HomeController@index');
 
-Route::get('/admin', 'AdminController@index')->name('admin'); 
+Route::group(['prefix' => 'wat-is-het', 'as' => 'what.'], function(){
+  Route::get('/', 'WhatController@index')->name('index');
+  Route::get('/{section}', 'WhatController@showSection')->name('section');
+});
 
-Route::post('/addWebsection',['as' => 'form_url', 'uses' => 'AdminController@save_data']);
+Route::group(['prefix' => 'hoe-reageren', 'as' => 'reaction.'], function(){
+  Route::get('/', 'ReactionController@index')->name('index');
+});
 
-Route::post('/editWebsection',['as' => 'form_url', 'uses' => 'AdminController@edit_data']);
-Route::post('/deleteWebsection',['as' => 'form_url', 'uses' => 'AdminController@delete_data']);
+Route::group(['prefix' => 'hun-verhaal', 'as' => 'testimonials.'], function(){
+  Route::get('/', 'TestimonialController@index')->name('index');
+});
 
+Route::group(['prefix' => 'mijn-verhaal', 'as' => 'testimonials.'], function(){
+  Route::get('/', 'TestimonialController@create')->name('create');
+  Route::post('/', 'TestimonialController@post')->name('post');
+});
 
+Route::group(['prefix' => 'waar-kan-je-terecht', 'as' => 'contact.'], function(){
+  Route::get('/', 'ContactController@index')->name('index');
+  Route::get('/online-chats', 'ContactController@onlineChats')->name('chats');
+  Route::get('/meldpunten', 'ContactController@hotlines')->name('hotlines');
+});
 
-
-Route::get('edit/{id}', array('as' => 'websection.edit', function($id) 
-{
-    // return our view and Nerd information
-    return View::make('edit') // pulls app/views/nerd-edit.blade.php
-        ->with('websection', Websection::find($id));
-}));
-
-
-
-
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
+  Route::get('/', 'AdminController@index')->name('panel');
+});
