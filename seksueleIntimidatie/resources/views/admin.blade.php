@@ -10,7 +10,7 @@
    
 <div class="container-fluid mt-5">
   
-    <h3>Sectieomschrijving: {{ $section->name }}</h3>
+    <h3>Sectie: {{ $section->name }}</h3>
     <div class="col-sm">
        <!-- <ul>
             <li>
