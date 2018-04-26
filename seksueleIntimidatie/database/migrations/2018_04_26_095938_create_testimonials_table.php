@@ -18,7 +18,7 @@ class CreateTestimonialsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('email');
-            $table->boolean('published')->default(false);
+            $table->boolean('published')->default(true);
             $table->boolean('highlight')->default(false);
             $table->timestamps();
         });
