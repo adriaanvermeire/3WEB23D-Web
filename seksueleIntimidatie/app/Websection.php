@@ -11,4 +11,7 @@ class Websection extends Model
     {
         return $this->hasMany('App\Contentblock');
     }
+
+    protected $fillable = ['name'];
+    protected $table = 'websection';
 }
