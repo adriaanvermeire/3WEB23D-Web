@@ -87,10 +87,13 @@ background-image: url('./bg-groen.jpg')
 
 }
 
+
 .buttonNormal{
     border-radius: 0;
-    background-color: yellow;
+    background-color: #ffffff;
     color: black;
+    border: none;
+
 }
 
 .buttonBlue:hover{
@@ -135,4 +138,9 @@ background-image: url('./bg-groen.jpg')
 
 .noPad{
     padding: 0;
+}
+
+
+.wat .row{
+    margin-top: 2vh;
 }
