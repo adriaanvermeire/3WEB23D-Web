@@ -24,6 +24,7 @@ Route::group(['prefix' => 'hoe-reageren', 'as' => 'reaction.'], function(){
 
 Route::group(['prefix' => 'hun-verhaal', 'as' => 'testimonials.'], function(){
   Route::get('/', 'TestimonialController@index')->name('index');
+  Route::get('/{id}', 'TestimonialController@show')->name('show');
 });
 
 Route::group(['prefix' => 'mijn-verhaal', 'as' => 'testimonials.'], function(){

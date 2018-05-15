@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-  <div class="card w-80 mx-auto mt-5">
+  <div class="card w-80 mx-auto mt-5 shadow">
     <div class="card-body">
       <div class="card-title">
         <h2>Voeg een nieuwe sectie toe aan de <i>Wat?</i>-pagina</h1>
@@ -29,7 +29,7 @@
   <h2 class='mt-3'>Overzicht van huidige secties:</h2>
 
   @foreach ($sections as $section)
-  <div class="card mt-2">
+  <div class="card mt-2 shadow">
       <div class="card-header d-flex justify-content-between">
         @if ($section->published)
         <span class="left">

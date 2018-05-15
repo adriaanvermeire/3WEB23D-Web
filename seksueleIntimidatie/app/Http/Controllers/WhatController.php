@@ -9,7 +9,7 @@ class WhatController extends Controller
     public $color = 'yellow';
 
     public function index(){
-      return view('test', ['title' => 'Wat is het?', 'color' => $this->color]);
+      return view('what.index', ['title' => 'Wat is seksuele intimidatie?', 'color' => $this->color]);
     }
 
     public function showSection($section){
