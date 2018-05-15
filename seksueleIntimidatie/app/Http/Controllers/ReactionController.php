@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 class ReactionController extends Controller
 {
-    function index(){
-      return view('test', ['title', 'Hoe reageren?']);
+    public $color = 'blue';
+
+    public function index(){
+      return view('test', ['title' => 'Hoe reageren?', 'color' => $this->color]);
     }
 }

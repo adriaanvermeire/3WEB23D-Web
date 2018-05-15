@@ -3,48 +3,41 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Websection;
+use App\WhatSection;
 
 class AdminController extends Controller
 {
     //
     function index()
     {
-        $websections = Websection::all();
-   
-      return view("admin")->with(["websection" => $websections]);
+      $sections = WhatSection::all();
+
+      return view("admin.index")->with(["sections" => $sections, "color" => 'yellow']);
     }
 
-    function edit_data(Request $request)
+    function login()
     {
-        $id = $request->input('id');
-
-        $websection = websection::find($id);
-
-        $websection->name = $request->input('name');
-        $websection->save();
-        return redirect()->route('admin');
+      return view('admin.login');
     }
 
-    public function save_data(Request $request)
-    {     
-        $websection = Websection::create($request->all());
-        return redirect()->route('admin');
+    function create_section(Request $request){
+      // Add Validation
+
+      $section = new WhatSection();
+      $section->title = $request->title;
+      $section->body = ltrim($request->body);
+
+      $section->save();
+
+      return redirect()->route('admin.index');
     }
 
-    function delete_data(Request $request)
-    {
-        $id = $request->input('id'); 
-        $websection = websection::find($id);
-        $websection->delete();
-        return redirect()->route('admin');
+    function toggle_published(Request $request){
+      $section = WhatSection::find($request->id);
+
+      $section->published = !$section->published;
+      $section->save();
+
+      return redirect()->route('admin.index');
     }
-    
-
-
-   
-
-   
-
-   
 }

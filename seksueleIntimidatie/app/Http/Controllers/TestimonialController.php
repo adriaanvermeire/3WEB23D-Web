@@ -6,15 +6,17 @@ use Illuminate\Http\Request;
 
 class TestimonialController extends Controller
 {
-  function index(){
-    return view('test', ['title'=>'Hun verhaal']);
+  public $color = 'green';
+
+  public function index(){
+    return view('test', ['title'=>'Hun verhaal', 'color' => $this->color]);
   }
 
-  function create(){
-    return view('test', ['title'=>'Mijn verhaal']);
+  public function create(){
+    return view('test', ['title'=>'Mijn verhaal', 'color' => $this->color]);
   }
 
-  function post(){
+  public function post(){
 
   }
 }

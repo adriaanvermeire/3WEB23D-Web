@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 class WhatController extends Controller
 {
-    function index(){
-      return view('test', ['title' => 'Wat is het?']);
+    public $color = 'yellow';
+
+    public function index(){
+      return view('test', ['title' => 'Wat is het?', 'color' => $this->color]);
     }
 
-    function showSection($section){
-      return view('test', ['title' => $section]);
+    public function showSection($section){
+      return view('test', ['title' => $section, 'color' => $this->color]);
     }
 }

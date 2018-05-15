@@ -6,13 +6,15 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    function index(){
-      return view('test', ['title' => 'Contact']);
+    public $color = 'red';
+
+    public function index(){
+      return view('test', ['title' => 'Contact', 'color' => $this->color]);
     }
-    function onlineChats(){
-      return view('test', ['title' => 'Online Chats']);
+    public function onlineChats(){
+      return view('test', ['title' => 'Online Chats', 'color' => $this->color]);
     }
-    function hotlines(){
-      return view('test', ['title' => 'Meldpunten']);
+    public function hotlines(){
+      return view('test', ['title' => 'Meldpunten', 'color' => $this->color]);
     }
 }

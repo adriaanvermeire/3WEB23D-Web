@@ -10,9 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Websection;
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'wat-is-het', 'as' => 'what.'], function(){
   Route::get('/', 'WhatController@index')->name('index');
@@ -38,6 +37,11 @@ Route::group(['prefix' => 'waar-kan-je-terecht', 'as' => 'contact.'], function()
   Route::get('/meldpunten', 'ContactController@hotlines')->name('hotlines');
 });
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
-  Route::get('/', 'AdminController@index')->name('panel');
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){
+  Route::get('/', 'AdminController@index')->name('index');
+  Route::post('/', 'AdminController@create_section')->name('create-section');
+  Route::post('/publish', 'AdminController@toggle_published')->name('toggle_published');
 });
+
+Route::get('/admin/login', 'AdminController@login')->name('login');
+Route::post('/admin/login', 'Auth\LoginController@login')->name('authenticate');
