@@ -144,3 +144,41 @@ background-image: url('./bg-groen.jpg')
 .wat .row{
     margin-top: 2vh;
 }
+.rotate{
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+.buttonDown .fa-angle-down{
+
+-ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.circle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    
+    
+}
+
+.fa-plus-circle{
+    color: green;
+    font-size: 50px;
+}
+
+.fa-minus-circle{
+    color: red;
+    font-size: 50px;
+}
+
+.wide{
+    width: 100vw
+}
