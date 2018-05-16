@@ -3,11 +3,53 @@
 @section('title', 'admin')
 
 @section('content')
+
 <div class="container">
-  <div class="card w-80 mx-auto mt-5 shadow">
+  <h1 class="text-center red mt-5">Admin Panel</h1>
+  <div class="card mx-auto shadow">
     <div class="card-body">
       <div class="card-title">
-        <h2>Voeg een nieuwe sectie toe aan de <i>Wat?</i>-pagina</h1>
+      @if (isset($unseen) && count($unseen) > 0)
+        <h3>Nieuwe verhalen!<br/><small>Er zijn verhalen die moeten nagekeken worden.</small></h3>
+      @else
+        <h3><small>Geen nieuwe verhalen. Je bent bijgewerkt!</small></h3>
+      @endif
+      </div>
+      <div class="card-text">
+        De andere verhalen vind je <a href="{!! route('admin.testimonials') !!}">hier</a>.
+      @if (isset($unseen))
+        <table class='table'>
+        @foreach ($unseen as $testimonial)
+          <tr>
+            <td>
+              <a href='{!! route('admin.review', ['id' => $testimonial->id]) !!}' class="btn btn-warning btn-sm">Bekijken</a>
+            </td>
+            <td>@truncate($testimonial->title, 50)</td>
+            @php
+              $body = strip_tags($testimonial->body);
+            @endphp
+            <td>@truncate($body, 50)</td>
+            <td><date>{{ $testimonial->created_at }}</date></td>
+            <td class='d-flex justify-content-end'>
+              <div class="btn-group">
+                <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Publiceren</a>
+                <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Weerhouden</a>
+              </div>
+            </td>
+          </tr>
+        @endforeach
+        </table>
+      @endif
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card mx-auto mt-5 shadow">
+    <div class="card-body">
+      <div class="card-title">
+        <h2>Voeg een nieuwe sectie toe aan de <i>Wat is het?</i>-pagina</h1>
       </div>
       {!! Form::open(['class' => 'form-horizontal', 'method' => 'POST', 'route' => 'admin.create-section']) !!}
 
@@ -25,52 +67,5 @@
       {!! Form::close() !!}
     </div>
   </div>
-
-  <h2 class='mt-3'>Overzicht van huidige secties:</h2>
-
-  @foreach ($sections as $section)
-  <div class="card mt-2 shadow">
-      <div class="card-header d-flex justify-content-between">
-        @if ($section->published)
-        <span class="left">
-          <date class='align-self-center'>Laatst geupdatet: {{ $section->updated_at}}</date>
-          <span class="badge badge-success">Gepubliceerd</span>
-        </span>
-        {!! Form::open(['route' => 'admin.toggle_published', 'method' => 'POST', 'class' => 'd-inline']) !!}
-        <button type='submit' name='id' value='{{ $section->id }}' class="btn btn-warning">Verbergen</button>
-        {!! Form::close() !!}
-        @else
-        <span class="left">
-          <date class='align-self-center'>Laatst geupdatet: {{ $section->updated_at}}</date>
-          <span class="badge badge-danger">Niet gepubliceerd</span>
-        </span>
-        {!! Form::open(['route' => 'admin.toggle_published', 'method' => 'POST']) !!}
-        <button type='submit' name='id' value='{{ $section->id }}' class="btn btn-warning">Publiceren</button>
-        {!! Form::close() !!}
-        @endif
-
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h3>{{ $section->title }}</h3>
-        </div>
-        <div class="card-body">
-          <pre>
-            {!! $section->body !!}
-          </pre>
-        </div>
-      </div>
-      <div class="col-sm">
-
-      </div>
-  </div>
-  @endforeach
-
-  <br>
-  <br>
-
-
-
-
-  </div>
+</div>
 @endsection

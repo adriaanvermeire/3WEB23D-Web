@@ -10,8 +10,10 @@ class TestimonialController extends Controller
   public $color = 'green';
 
   public function index(){
-    $testimonials = Testimonial::where('published', 1)->get();
+    $highlight = Testimonial::where('highlight', 1)->first();
+    $testimonials = Testimonial::where(['published' => 1, 'highlight' => 0])->get();
     $data = [
+      'highlight' => $highlight,
       'testimonials' => $testimonials,
       'title'=>'Hun verhaal',
       'color' => $this->color,
@@ -42,9 +44,53 @@ class TestimonialController extends Controller
     $testimonial->email = $request->email;
     $testimonial->title = $request->title;
     $testimonial->body = $request->body;
-    $testimonial->published = true;
 
     $testimonial->save();
     return redirect()->route('testimonials.index');
+  }
+
+  function accept_testimonial($id){
+    $test = Testimonial::find($id);
+
+    $test->published = true;
+    $test->save();
+
+    return redirect()->route('admin.testimonials');
+  }
+
+  function reject_testimonial($id){
+    $test = Testimonial::find($id);
+
+    $test->published = false;
+    $test->save();
+
+    return redirect()->route('admin.testimonials');
+  }
+
+  function highlight($id) {
+    $current = Testimonial::where('highlight', 1)->first();
+    if(isset($current)){
+      $current->highlight = false;
+      $current->save();
+    }
+    if (!isset($current) || $id != $current->id) {
+      $new = Testimonial::find($id);
+      $new->highlight = true;
+      $new->save();
+    }
+    return redirect()->route('admin.testimonials');
+  }
+
+  function review($id){
+    $testimonial = Testimonial::findOrFail($id);
+
+    $data = [
+      'testimonial' => $testimonial,
+      'admin' => true,
+      'title' =>'Admin | Verhaal Review',
+      'color' => 'primary',
+    ];
+
+    return view('testimonials.review', $data);
   }
 }

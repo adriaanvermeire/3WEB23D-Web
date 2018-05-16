@@ -136,3 +136,11 @@ body {
 .green{
     color: #6EC24C;
 }
+
+.yellow{
+    color: #ffc107;
+}
+
+.no-highlight i:hover{
+  color: #ffc107;
+}

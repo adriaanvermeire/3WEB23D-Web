@@ -40,8 +40,16 @@ Route::group(['prefix' => 'waar-kan-je-terecht', 'as' => 'contact.'], function()
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){
   Route::get('/', 'AdminController@index')->name('index');
+  Route::get('/wat-is-het', 'AdminController@what')->name('what');
   Route::post('/', 'AdminController@create_section')->name('create-section');
   Route::post('/publish', 'AdminController@toggle_published')->name('toggle_published');
+
+  // Admin Testimonial
+  Route::get('/testimonials', 'AdminController@testimonials')->name('testimonials');
+  Route::get('/accept/{id}', 'TestimonialController@accept_testimonial')->name('accept_testimonial');
+  Route::get('/reject/{id}', 'TestimonialController@reject_testimonial')->name('reject_testimonial');
+  Route::get('/highlight/{id}', 'TestimonialController@highlight')->name('highlight');
+  Route::get('/review/{id}', 'TestimonialController@review')->name('review');
 });
 
 Route::get('/admin/login', 'AdminController@login')->name('login');

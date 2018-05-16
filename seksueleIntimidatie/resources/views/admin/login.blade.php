@@ -3,7 +3,7 @@
 @section('title', 'Admin Login')
 
 @section('content')
-  <div class="card w-50 mx-auto mt-5">
+  <div class="card w-50 mx-auto mt-5 shadow">
     <div class="card-body">
       <div class="card-title">
         <h2>Admin Login</h2>

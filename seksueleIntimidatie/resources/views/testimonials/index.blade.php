@@ -9,6 +9,23 @@
 <div class="container mt-3">
   <a href="{!! route('testimonials.create') !!}" class="btn buttonBlue shadow link white">Deel je verhaal</a>
   <div class="card-columns mt-2">
+  @if ($highlight)
+    <div class="card shadow mt-2">
+      <div class="card-body">
+        <div class="card-title d-flex align-items-center" title='Dit verhaal is een aanrader om te lezen.'>
+          <i class="fas fa-star yellow"></i>
+          <h4 class='ml-1 m-0'>{{ $highlight->title }}</h4>
+        </div>
+        @php
+          $body = strip_tags($highlight->body);
+        @endphp
+        <div class="card-text">@truncate($body, 500)</div>
+      </div>
+      <div class="card-footer">
+        <p><a href="{!! route('testimonials.show', ['id' => $highlight->id]) !!}">Lees meer</a></p>
+      </div>
+    </div>
+  @endif
   @foreach ($testimonials as $testimonial)
     <div class="card shadow mt-2">
       <div class="card-body">
