@@ -1,6 +1,6 @@
 <header class="navbar navbar-expand justify-content-between shadow{{ ' bg-' . $color }}">
   <a href="{!! route('home') !!}" class="navbar-brand">
-    <img src="{!! asset('logo_antwerpen.png') !!}" alt="Antwerpen"></a>
+    <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen"></a>
   </a>
   @auth
   <ul class="navbar-nav mr-auto">

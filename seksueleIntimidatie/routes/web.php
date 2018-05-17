@@ -34,8 +34,6 @@ Route::group(['prefix' => 'mijn-verhaal', 'as' => 'testimonials.'], function(){
 
 Route::group(['prefix' => 'waar-kan-je-terecht', 'as' => 'contact.'], function(){
   Route::get('/', 'ContactController@index')->name('index');
-  Route::get('/online-chats', 'ContactController@onlineChats')->name('chats');
-  Route::get('/meldpunten', 'ContactController@hotlines')->name('hotlines');
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){
