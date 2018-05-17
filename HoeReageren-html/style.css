@@ -46,6 +46,9 @@ h1,h2,h3,h4,h5{
 font-family: "Antwerpen-Regular", sans-serif;
 
 }
+h2,h3,h4,h5{
+    font-family: "Sun-Ant-Regular";
+}
 
 body
 {
@@ -196,7 +199,7 @@ background-image: url('./bg-groen.jpg')
     cursor: pointer;
 }
 
-.game:hover{
+.pointer:hover{
     cursor: pointer;
 }
 
@@ -205,3 +208,6 @@ background-image: url('./bg-groen.jpg')
     width: 100vw
 }
 
+.paddingRight{
+    padding-right: 60px;
+}
