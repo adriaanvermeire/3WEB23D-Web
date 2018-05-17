@@ -69,6 +69,15 @@ background-image: url('./bg-groen.jpg')
     color: #FFFFFF;
 }
 
+.bgwhite{
+    background-color: #ffffff;
+}
+
+.bggrey{
+    background-color:lightgray;
+
+}
+
 .green{
     color: #6EC24C;
 }
@@ -179,6 +188,20 @@ background-image: url('./bg-groen.jpg')
     font-size: 50px;
 }
 
+.fa-gamepad{
+    color: black;
+    font-size: 15vw;
+}
+.fa-gamepad:hover{
+    cursor: pointer;
+}
+
+.game:hover{
+    cursor: pointer;
+}
+
+
 .wide{
     width: 100vw
 }
+
