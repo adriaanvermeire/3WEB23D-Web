@@ -1,0 +1,44 @@
+/* Webfont: Antwerpen-Regular */
+
+@font-face {
+    font-family: "Antwerpen-Regular";
+    src: url("../fonts/Antwerpen/Antwerpen-Regular.eot");
+    src: url("../fonts/Antwerpen/Antwerpen-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Antwerpen/Antwerpen-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Antwerpen/Antwerpen-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Antwerpen/Antwerpen-Regular.svg#Antwerpen-Regular") format("svg");
+    /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Sun-Antwerpen-Regular */
+
+@font-face {
+    font-family: "Sun-Ant-Regular";
+    src: url("../fonts/SunAntwerpen_500/SunAntwerpen_500.eot");
+    src: url("../fonts/SunAntwerpen_500/SunAntwerpen_500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SunAntwerpen_500/SunAntwerpen_500.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SunAntwerpen_500/SunAntwerpen_500.svg#Antwerpen-Regular") format("svg");
+    /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Sun-Antwerpen-Regular-Italic */
+
+@font-face {
+    font-family: "Sun-Ant-Regular-Italic";
+    src: url("../fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.eot");
+    src: url("../fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SunAntwerpen_500_italic/SunAntwerpen_500_italic.svg#Antwerpen-Regular") format("svg");
+    /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Content */
