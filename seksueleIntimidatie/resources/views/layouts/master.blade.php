@@ -11,12 +11,14 @@
   <title>@yield('title')</title>
 </head>
 <body>
-  @if (isset($color))
-    @include('components.header', ['color' => $color])
-  @else
-    @include('components.home-header')
-  @endif
-  @yield('content')
+  <main>
+    @if (isset($color))
+      @include('components.header', ['color' => $color])
+    @else
+      @include('components.home-header')
+    @endif
+    @yield('content')
+  </main>
   @include('components.footer')
   @stack('scripts')
 </body>
