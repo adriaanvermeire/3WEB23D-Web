@@ -12,7 +12,14 @@
 
   <title>@yield('title')</title>
 </head>
-<body>
+@php
+  if(isset($color)){
+    $bg = 'background-' . $color;
+  }else {
+    $bg = 'background-green';
+  }
+@endphp
+<body class='{{ $bg }}'>
   <main>
     @if (isset($color))
       @include('components.header', ['color' => $color])
