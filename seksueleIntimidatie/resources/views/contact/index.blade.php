@@ -16,7 +16,7 @@
   </div>
 </div>
 <div class="container mt-5">
-  <h2 class="text-center black">Praat er over</h2>
+  <h2 class="text-center black">Praat erover</h2>
   <div class="card shadow">
     <div class="card-body">
       <div class="card-text">

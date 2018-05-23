@@ -41,13 +41,37 @@
     text-rendering: optimizeLegibility;
 }
 
-h1,h2,h3,h4,h5{
+body {
+  font-size: 18px;
+}
+
+h1{
   font-family: "Antwerpen-Regular", sans-serif;
 }
 
-body {
+body,h2,h3,h4,h5 {
   font-family: "Sun-Ant-Regular", sans-serif;
-  background-image: url('/images/bg-groen.jpg')
+}
+
+h2,h3,h4,h5 {
+  font-weight: bold;
+  text-transform: capitalize;:
+}
+
+body.background-green {
+  background-image: url('/images/bg-green.png');
+}
+
+body.background-yellow {
+  background-image: url('/images/bg-yellow.png');
+}
+
+body.background-blue {
+  background-image: url('/images/bg-blue.png');
+}
+
+body.background-red {
+  background-image: url('/images/bg-red.png');
 }
 
 .shadow{
