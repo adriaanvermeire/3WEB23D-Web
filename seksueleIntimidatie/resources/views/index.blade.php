@@ -5,7 +5,7 @@
 @section('content')
 <main class="d-flex justify-content-center">
   <div>
-    <object data="{!! asset('images/homenav.svg') !!}" type="image/svg+xml"></object>
+    <object data="{!! asset('images/homenavi.svg') !!}" type="image/svg+xml"></object>
   </div>
 </main>
 @endsection

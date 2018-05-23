@@ -24,16 +24,16 @@
 }
 
 #hoe:hover {
-    transform: translate(10px, 10px);
+    transform: translate(10px, -10px);
     cursor: pointer;
 }
 
 #hunVerhalen:hover {
-    transform: translate(-10px, 10px);
+    transform: translate(10px, 10px);
     cursor: pointer;
 }
 
 #waar:hover {
-    transform: translate(10px, -10px);
+    transform: translate(-10px, 10px);
     cursor: pointer;
 }
