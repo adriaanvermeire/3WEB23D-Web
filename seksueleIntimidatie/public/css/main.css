@@ -47,7 +47,21 @@ h1,h2,h3,h4,h5{
 
 body {
   font-family: "Sun-Ant-Regular", sans-serif;
-  background-image: url('/images/bg-groen.jpg')
+}
+body.background-green {
+  background-image: url('/images/bg-green.png');
+}
+
+body.background-yellow {
+  background-image: url('/images/bg-yellow.png');
+}
+
+body.background-blue {
+  background-image: url('/images/bg-blue.png');
+}
+
+body.background-red {
+  background-image: url('/images/bg-red.png');
 }
 
 .shadow{
