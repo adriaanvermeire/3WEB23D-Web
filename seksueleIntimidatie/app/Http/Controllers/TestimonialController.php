@@ -89,6 +89,7 @@ class TestimonialController extends Controller
       'admin' => true,
       'title' =>'Admin | Verhaal Review',
       'color' => 'primary',
+      'no_footer' => true,
     ];
 
     return view('testimonials.review', $data);

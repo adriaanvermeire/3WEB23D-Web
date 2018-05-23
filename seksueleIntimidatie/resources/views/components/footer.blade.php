@@ -6,6 +6,12 @@
 
         <ul class='navigation'>
             <li>
+              <a href="{!! route('home') !!}" title="Hoofdpagina" class="">
+                Hoofdpagina
+                <span class="fa fa-home"></span>
+              </a>
+            </li>
+            <li>
               <a href="{!! route('what.index') !!}" title="Wat is intimidatie?" class="">
                 Wat-is-het?
                 <span class="fa fa-chevron-right"></span>

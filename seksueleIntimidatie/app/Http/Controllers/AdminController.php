@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
 
     public $color = 'primary';
-
+    public $no_footer = true;
     function index()
     {
       $unseen = Testimonial::whereRaw('created_at == updated_at')->get();
@@ -19,6 +19,7 @@ class AdminController extends Controller
         'unseen' => $unseen,
         'seen' => $seen,
         'color' => $this->color,
+        'no_footer' => $this->no_footer,
       ];
 
       return view("admin.index", $data);
@@ -28,12 +29,18 @@ class AdminController extends Controller
     {
       $sections = WhatSection::all();
 
-      return view("admin.index")->with(["sections" => $sections, "color" => $this->color]);
+      $data = [
+        'no_footer' => $this->no_footer,
+        "sections" => $sections,
+        "color" => $this->color,
+      ];
+
+      return view("admin.index", $data);
     }
 
     function login()
     {
-      return view('admin.login');
+      return view('admin.login', ['no_footer' => $this->no_footer]);
     }
 
     function create_section(Request $request){
@@ -67,6 +74,7 @@ class AdminController extends Controller
         'unseen' => $unseen,
         'seen' => $seen,
         'color' => $this->color,
+        'no_footer' => $this->no_footer,
       ];
       return view('admin.testimonials', $data);
     }
