@@ -41,13 +41,23 @@
     text-rendering: optimizeLegibility;
 }
 
-h1,h2,h3,h4,h5{
+body {
+  font-size: 18px;
+}
+
+h1{
   font-family: "Antwerpen-Regular", sans-serif;
 }
 
-body {
+body,h2,h3,h4,h5 {
   font-family: "Sun-Ant-Regular", sans-serif;
 }
+
+h2,h3,h4,h5 {
+  font-weight: bold;
+  text-transform: capitalize;:
+}
+
 body.background-green {
   background-image: url('/images/bg-green.png');
 }
