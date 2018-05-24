@@ -3,40 +3,59 @@
 @section('title', $title)
 
 @section('content')
+  @if (count($scenarios) > 0)
   <div class="container mt-5">
     <h1 class="text-center red">Hoe moet je reageren bij volgende situaties</h1>
   </div>
   <div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus, assumenda doloremque magnam velit amet
-      inventore porro dolores voluptate? Doloribus necessitatibus, omnis cupiditate asperiores sequi atque libero quaerat
-      itaque praesentium.</p>
+    <h4>Hieronder vind je enkele situaties waarbij je een goede en slechte reactie ziet.</h4>
   </div>
 
   <div class="container wat">
-    <div class="row">
-      <button data-toggle="collapse" data-target="#demo" class="btn-block buttonNormal shadow text-left ">Iemand roept vulgaire woorden naar een meisje/jongen op de bus
-        <i class="fa fa-angle-down pull float-right"></i>
-      </button>
-
-      <div id="demo" class="collapse">
-
-          <div class="card shadow">
-              <div class="card-body">
-                This is some text within a card body.
+    @foreach ($scenarios as $scenario)
+      <div class="card shadow">
+        <a data-toggle="collapse" href="#test-block" aria-expanded="true" aria-controls="test-block" class='situation-toggle collapsed'>
+          <div class="card-header d-flex justify-content-between align-items-center text-dark situation-header p-3">
+            <h5 class='m-0'>
+              <strong>
+                {{ $scenario->name }}
+              </strong>
+            </h5>
+            <i class="fa fa-angle-down arrow"></i>
+          </div>
+        </a>
+        <div id="test-block" class="collapse">
+          <div class="card-block p-3">
+            <div class="row p-2">
+              <div class="col-2 offset-sm-1">
+                <i class="fas fa-plus-circle"></i>
+              </div>
+              <div class="col-6 good">
+                {{ $scenario->good }}
+              </div>
+              </div>
+              <div class="row p-2">
+                <div class="col-2 offset-sm-1">
+                  <i class="fas fa-minus-circle"></i>
+                </div>
+                <div class="col-6 bad">
+                  {{ $scenario->good }}
+                </div>
               </div>
             </div>
-      </div>
-    </div>
-    <div class="row">
-      <button data-toggle="collapse" data-target="#demo2" class="btn-block buttonNormal shadow text-left ">Iemand roept vulgaire woorden naar een meisje/jongen op de bus
-        <i class="fa fa-angle-down pull float-right"></i>
-      </button>
-
-      <div id="demo2" class="collapse">
-        Lorem ipsum dolor text....
-      </div>
-    </div>
-
+          </div>
+        </div>
+    @endforeach
   </div>
+  @endif
+  <div class="container wat p-5">
+    <h1 class="text-center red">Speel ons spel en test je kennis!</h1>
 
+    <div class="container bggrey p-5 pointer">
+      <div class="text-center p-5">
+        <i class="fas fa-gamepad"></i>
+      </div>
+
+    </div>
+  </div>
 @endsection
