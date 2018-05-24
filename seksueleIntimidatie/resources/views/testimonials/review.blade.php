@@ -8,7 +8,7 @@
 </div>
 <div class="container mt-1" style="">
   <span class="d-flex align-items-center">
-    <a href='{!! route('admin.testimonials') !!}' class="btn btn-warning">Terug naar lijst</a>
+    <a href='{!! route('admin.index') !!}' class="btn buttonBlue">Admin Panel</a>
     @if ($testimonial->updated_at == $testimonial->created_at)
     <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success ml-1">Publiceren</a>
     <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger ml-1">Weerhouden</a>
