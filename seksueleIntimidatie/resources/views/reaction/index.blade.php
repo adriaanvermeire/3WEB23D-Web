@@ -54,26 +54,4 @@
 
     </div>
   </div>
-  @push('scripts')
-
-  <script>
-    $(function () { //run when the DOM is ready
-      $(".vraag").click(function () { //use a class, since your ID gets mangled
-        if ($(this).hasClass("buttonDown")) {
-
-          $(this).removeClass("buttonDown")
-          $(this).removeClass("rotate")
-
-        } else {
-          $(this).addClass("buttonDown"); //add the class to the clicked element
-          $(this).addClass("rotate"); //add the class to the clicked element
-        }
-
-
-      });
-    });
-  </script>
-@endpush
-
-
 @endsection
