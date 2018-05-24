@@ -10,7 +10,7 @@
     @endauth
   </span>
 
-  <ul class="navbar-nav">
+  <span id="circlenav">
 
     @if(Request::is('wat-is-het'))
     <object data="{!! asset('images/WATNAV.svg') !!}" type="image/svg+xml"></object>
@@ -35,5 +35,6 @@
     <li class="{{ Request::is('waar-kan-je-terecht*') ? 'nav-item active' : 'nav-item' }}"><a href="{!! route('contact.index') !!}" class="nav-link">Waar kan je terecht?</a></li>
     <li class="{{ Request::is('*-verhaal') ? 'nav-item active' : 'nav-item' }}"><a href="{!! route('testimonials.index') !!}" class="nav-link">Hun verhalen</a></li>
   --}}
-  </ul>
+
+  </span>
 </header>
