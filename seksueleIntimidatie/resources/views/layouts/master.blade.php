@@ -19,12 +19,8 @@
   }
 @endphp
 <body class='{{ $bg }}'>
+  @include('components.header')
   <main>
-    @if (isset($color))
-      @include('components.header', ['color' => $color])
-    @else
-      @include('components.home-header')
-    @endif
     @yield('content')
   </main>
   @if (!isset($no_footer))

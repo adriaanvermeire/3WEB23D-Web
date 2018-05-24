@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\WhatSection;
 use App\Testimonial;
+use App\HowScenario;
 
 class AdminController extends Controller
 {
@@ -15,11 +16,13 @@ class AdminController extends Controller
     {
       $unseen = Testimonial::whereRaw('created_at == updated_at')->get();
       $seen = Testimonial::whereRaw('created_at != updated_at')->get();
+      $scenarios = HowScenario::all();
       $data = [
         'unseen' => $unseen,
         'seen' => $seen,
         'color' => $this->color,
         'no_footer' => $this->no_footer,
+        'scenarios' => $scenarios,
       ];
 
       return view("admin.index", $data);

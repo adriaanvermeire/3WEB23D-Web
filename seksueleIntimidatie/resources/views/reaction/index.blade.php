@@ -14,7 +14,7 @@
   <div class="container wat">
     @foreach ($scenarios as $scenario)
       <div class="card shadow">
-        <a data-toggle="collapse" href="#test-block" aria-expanded="true" aria-controls="test-block" class='situation-toggle collapsed'>
+        <a data-toggle="collapse" href="#scenario-{{$scenario->id}}" aria-expanded="true" aria-controls="scenario-{{$scenario->id}}" class='situation-toggle collapsed'>
           <div class="card-header d-flex justify-content-between align-items-center text-dark situation-header p-3">
             <h5 class='m-0'>
               <strong>
@@ -24,7 +24,7 @@
             <i class="fa fa-angle-down arrow"></i>
           </div>
         </a>
-        <div id="test-block" class="collapse">
+        <div id="scenario-{{$scenario->id}}" class="collapse">
           <div class="card-block p-3">
             <div class="row p-2">
               <div class="col-2 offset-sm-1">
@@ -39,7 +39,7 @@
                   <i class="fas fa-minus-circle"></i>
                 </div>
                 <div class="col-6 bad">
-                  {{ $scenario->good }}
+                  {{ $scenario->bad }}
                 </div>
               </div>
             </div>

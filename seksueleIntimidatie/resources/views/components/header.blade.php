@@ -9,6 +9,7 @@
     </ul>
     @endauth
   </span>
+  @if (!Request::is('/'))
 
   <span id="circlenav">
 
@@ -21,20 +22,8 @@
     @elseif(Request::is('*-verhaal'))
     <object data="{!! asset('images/HUNNAV.svg') !!}" type="image/svg+xml"></object>
     @endif
+      </span>
 
-    {{--
-    <object data="{!! asset('images/HOENAV.svg') !!}" type="image/svg+xml"></object>
-    <object data="{!! asset('images/WAARNAV.svg') !!}" type="image/svg+xml"></object>
-    <object data="{!! asset('images/HUNNAV.svg') !!}" type="image/svg+xml"></object>
-    --}}
+  @endif
 
-         
-  {{--
-    <li class="{{ Request::is('wat-is-het') ? 'nav-item active' : 'nav-item' }}"><a href="{!! route('what.index') !!}" class="nav-link">Wat is het?</a></li>
-    <li class="{{ Request::is('hoe-reageren*') ? 'nav-item active' : 'nav-item' }}"><a href="{!! route('reaction.index') !!}" class="nav-link">Hoe reageren?</a></li>
-    <li class="{{ Request::is('waar-kan-je-terecht*') ? 'nav-item active' : 'nav-item' }}"><a href="{!! route('contact.index') !!}" class="nav-link">Waar kan je terecht?</a></li>
-    <li class="{{ Request::is('*-verhaal') ? 'nav-item active' : 'nav-item' }}"><a href="{!! route('testimonials.index') !!}" class="nav-link">Hun verhalen</a></li>
-  --}}
-
-  </span>
 </header>
