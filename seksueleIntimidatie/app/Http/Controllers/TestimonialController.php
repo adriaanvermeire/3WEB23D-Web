@@ -46,6 +46,13 @@ class TestimonialController extends Controller
     $testimonial->body = $request->body;
 
     $testimonial->save();
+
+    $data = [
+      'title' => 'Verhaal toegevoegd!',
+      'testimonial_title' => $testimonial->title,
+      'no_footer' => true,
+    ];
+
     return view('testimonials.success', $data);
   }
 
