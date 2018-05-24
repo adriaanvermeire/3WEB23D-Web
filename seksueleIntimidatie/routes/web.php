@@ -43,11 +43,16 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
   Route::post('/publish', 'AdminController@toggle_published')->name('toggle_published');
 
   // Admin Testimonial
-  Route::get('/testimonials', 'AdminController@testimonials')->name('testimonials');
   Route::get('/accept/{id}', 'TestimonialController@accept_testimonial')->name('accept_testimonial');
   Route::get('/reject/{id}', 'TestimonialController@reject_testimonial')->name('reject_testimonial');
   Route::get('/highlight/{id}', 'TestimonialController@highlight')->name('highlight');
   Route::get('/review/{id}', 'TestimonialController@review')->name('review');
+
+  // Admin Reaction
+  Route::get('/scenarios/toevoegen', 'ReactionController@create')->name('create-scenario');
+  Route::get('/scenarios/{id}', 'ReactionController@edit')->name('edit-scenario');
+  Route::post('/scenarios', 'ReactionController@post')->name('post-scenario');
+  Route::delete('/scenarios/{id}', 'ReactionController@delete')->name('delete-scenario');
 });
 
 Route::get('/admin/login', 'AdminController@login')->name('login');
