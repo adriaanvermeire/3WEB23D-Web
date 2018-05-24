@@ -279,3 +279,73 @@ footer .contact-option .buttonRect {
 .image-404:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
+.navbar-nav {
+  margin-right: 0px;
+}
+
+/* NAV */
+
+#HOEPAGE-wat:hover {
+  transform: translate(-15px, 0px);
+  cursor: pointer;
+}
+
+#HOEPAGE-waar:hover {
+  transform: translate(-15px, 15px);
+  cursor: pointer;
+}
+
+#HOEPAGE-hun:hover {
+  transform: translate(0px, 15px);
+  cursor: pointer;
+}
+
+#WATPAGE-hoe:hover {
+  transform: translate(-15px, 0px);
+  cursor: pointer;
+}
+
+#WATPAGE-waar:hover {
+  transform: translate(-15px, 15px);
+  cursor: pointer;
+}
+
+#WATPAGE-hun:hover {
+  transform: translate(0px, 15px);
+  cursor: pointer;
+}
+
+#HUNPAGE-wat:hover {
+  transform: translate(-15px, 0px);
+  cursor: pointer;
+}
+
+#HUNPAGE-hoe:hover {
+  transform: translate(-15px, 15px);
+  cursor: pointer;
+}
+
+#HUNPAGE-waar:hover {
+  transform: translate(0px, 15px);
+  cursor: pointer;
+}
+
+#WAARPAGE-wat:hover {
+  transform: translate(-15px, 0px);
+  cursor: pointer;
+}
+
+#WAARPAGE-hoe:hover {
+  transform: translate(-15px, 15px);
+  cursor: pointer;
+}
+
+#WAARPAGE-hun:hover {
+  transform: translate(0px, 15px);
+  cursor: pointer;
+}
+
+.svgnavani {
+  transition: all 0.3s;
+}
