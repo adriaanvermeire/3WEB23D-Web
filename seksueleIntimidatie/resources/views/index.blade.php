@@ -3,9 +3,9 @@
 @section('title', 'Seksuele Intimidatie')
 
 @section('content')
-<main class="d-flex justify-content-center">
-  <div>
+<div class="d-flex justify-content-center">
+  <div class="svg">
     <object data="{!! asset('images/homenavi.svg') !!}" type="image/svg+xml"></object>
   </div>
-</main>
+</div>
 @endsection

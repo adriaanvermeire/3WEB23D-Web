@@ -10,7 +10,9 @@
     @endauth
   </span>
   @if (!Request::is('/'))
-  <ul class="navbar-nav">
+
+  <span id="circlenav">
+
     @if(Request::is('wat-is-het'))
     <object data="{!! asset('images/WATNAV.svg') !!}" type="image/svg+xml"></object>
     @elseif(Request::is('hoe-reageren*'))
@@ -20,6 +22,8 @@
     @elseif(Request::is('*-verhaal'))
     <object data="{!! asset('images/HUNNAV.svg') !!}" type="image/svg+xml"></object>
     @endif
-  </ul>
+      </span>
+
   @endif
+
 </header>
