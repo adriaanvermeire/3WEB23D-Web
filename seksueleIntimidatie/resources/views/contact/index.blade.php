@@ -5,15 +5,7 @@
 @section('content')
 <div class="container mt-5">
   <h1 class="text-center red">Waar kan je terecht?</h1>
-  <div class="card shadow">
-    <div class="card-body">
-      <div class="card-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus, assumenda doloremque magnam velit amet
-          inventore porro dolores voluptate? Doloribus necessitatibus, omnis cupiditate asperiores sequi atque libero quaerat
-          itaque praesentium.</p>
-      </div>
-    </div>
-  </div>
+ 
 </div>
 <div class="container mt-5">
   <h2 class="text-center black">Praat erover</h2>

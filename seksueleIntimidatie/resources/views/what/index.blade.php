@@ -1,101 +1,231 @@
-@extends('layouts/master')
+@extends('layouts/master') @section('title', $title) @section('content')
+<div class="container mt-5">
+  <h1 class="text-center red">Wat is intimidatie nu eigenlijk?</h1>
+</div>
 
-@section('title', $title)
+<div class="container shadow " style="height: 40vh; background-color:grey;">
+  fotoke
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4  ">
+      Wat betekent
+      <span class="red">
+        <strong> seksuele intmidatie </strong>
+      </span>? Welke vormen zijn er en welke zijn
+      <strong>strafbaar</strong>?
+    </div>
 
-@section('content')
-  <div class="container mt-5">
-    <h1 class="text-center red">Wat is intimidatie nu eigenlijk?</h1>
+  </div>
+</div>
+<div class="container ">
+
+  <div class="row">
+    <div class="col-md-4 float-left shadow " style="height: 40vh; background-color:grey;">
+      fotoke
+    </div>
+
+    <div class="col-md-6 offset-md-2 float-right">
+      <span class="red">
+        <strong> Seksuele intimidatie </strong>
+      </span> is een ongewenst gedrag op seksueel gebied. Het kan gaan om geweld met woorden, seksuele opmerkingen of intieme vragen
+      over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <h2>Welke vormen zijn er</h2>
   </div>
 
-  <div class="container shadow " style="height: 40vh; background-color:grey;">
-    fotoke
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur amet quaerat ab, laboriosam eius blanditiis voluptatibus
-        cumque minima, exercitationem
+  <div class="row d-flex justify-content-between">
+    <div class="col-md-3 ">
+      <div class="row">
+        <h3 class="red"> Verbaal </h3>
       </div>
+      <div class="row shadow bg-white ">
+
+
+        <ul class="list-group ">
+          <li class="list-group-item">seksuele opmerkingen maken</li>
+          <li class="list-group-item">seksuele getinte sms'jes of briefjes</li>
+          <li class="list-group-item">intieme vragen stellen over iemands privéleven</li>
+          <li class="list-group-item">voorstellen doen voor afspraakjes met de bedoeling daarbij seksueel contact te hebben</li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="col-md-3   ">
+      <div class="row">
+        <h3 class="red"> Non-verbaal </h3>
+      </div>
+      <div class="row shadow bg-white">
+        <ul class="list-group ">
+          <li class="list-group-item">iemand langdurig aanstaren</li>
+          <li class="list-group-item">seksueel getinte afbeeldingen tonen (in de werkkamer of via internet of intranet)</li>
+          <li class="list-group-item">seksueel gerichte gebaren maken</li>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-3  ">
+      <div class="row">
+        <h2 class="red">Fysiek</h2>
+
+      </div>
+      <div class="row shadow bg-white">
+        <ul class="list-group  ">
+          <li class="list-group-item">vastpakken, arm om schouder leggen, knijpen </li>
+          <li class="list-group-item">iemand (proberen te) zoenen</li>
+          <li class="list-group-item">iemand de doorgang versperren</li>
+          <li class="list-group-item">aanranding</li>
+          <li class="list-group-item">verkrachting</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="container">
+      <h2 class="float-right">Enkele voorbeelden van seksuele intimidatie</h2>
+    </div>
+  </div>
+
+  <h4 class="red ">seksuele getinte opmerkingen</h4>
+  <h4 class="red mt-3">Ongepaste gebaren en geluiden</h4>
+  <h4 class="red mt-3">Opdringerig gedrag</h4>
+  <h4 class="red mt-3">Gluren of nafluiten</h4>
+  <h4 class="red mt-3">Ongevraagd in de billen knijpen of naar borsten grijpen</h4>
+  <h4 class="red mt-3">Uitschelden voor hoer, slet ...</h4>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="container">
+      <h2 class="">Verschil tussen aanranding en verkrachting </h2>
+      Bij verkrachting is er altijd sprake van penetratie.
+Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen met lichamelijk contact maar zonder penetratie
 
     </div>
   </div>
-  <div class="container ">
-
-    <div class="row">
-      <div class="col-md-4 float-left shadow " style="height: 40vh; background-color:grey;">
-        fotoke
+</div>
+<div class="container">
+  <div class="row">
+    <div class="container">
+      <h2 class="float-right">Waar is de grens?</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 float-left shadow  " style="height: 40vh; background-color:grey;">
+      fotoke
+    </div>
+    <div class="col-md-6 offset-md-2 float-right">
+      <div class="row p-2">
+        <h4 class="red"> Ongewenst lichamelijk contact (aanranding) </h4>Bij jongeren onder de 16 jaar wordt seksueel contact gelijkgesteld
+        aan aanranding zelfs wanneer de jongere ermee instemt! Aanranding kan bestraft worden van 6 maanden gevangenisstraf
+        tot 5 jaar.
       </div>
-
-      <div class="col-md-6 offset-md-2 float-right">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident unde, voluptates corporis vitae delectus suscipit non
-        cumque eum, itaque cum neque corrupti ut molestiae aliquid optio doloremque sapiente in temporibus.
+      <div class="row mt-5 p-2">
+        <h4 class="red"> Belaging </h4> Alle gedrag dat de rust van de getroffen persoon ernstig verstoort zoals bijvoorbeeld achternalopen,
+        omringen, intimiderende of beledigende sms-en of berichten op facebook sturen enzovoort.
+      </div>
+      <div class="row mt-5 p-2">
+        <h4 class="red"> Gluren </h4> Personen observeren of doen observeren, maar ook beelden of geluidsopnamen van iemand maken, zonder
+        dat hij/zij dat weet of daarvoor toestemming heeft gegeven.
       </div>
     </div>
   </div>
+</div>
 
+<div class="container">
 
-  <div class="container">
-    <div class="row">
-      <h2>Welke vormen zijn er</h2>
+  <h2>Meisjes én jongens </h2>
+  <div class="row  d-flex justify-content-between">
+    <div class="col-md-4 ml-0 "> Meisjes zijn vaker het slachtoffer en jongens de plegers. Maar vergeet niet dat jongens ook het slachtoffer kunnen zijn.
     </div>
 
-    <div class="row">
-      <div class="col-md-3  ">
-        <div class="row">
-          image
-        </div>
-        <div class="row">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam amet asperiores necessitatibus veniam debitis aut dolor
-          cumque! Saepe tempora nisi suscipit doloremque necessitatibus vel ipsam delectus velit, quis reprehenderit.
-        </div>
-      </div>
-      <div class="col-md-3  ">
-        <div class="row">
-          image
-        </div>
-        <div class="row">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis itaque cumque. Commodi eaque temporibus culpa aliquam
-          repellendus ab dolores mollitia enim dolorum nesciunt. Tempore praesentium quaerat omnis perferendis facilis!
-        </div>
-      </div>
-      <div class="col-md-3 ">
-        <div class="row">
-          image
-        </div>
-        <div class="row">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ut natus quis. Repudiandae hic totam harum mollitia repellat
-          doloribus. Nostrum reiciendis, quisquam ex at delectus quidem corporis amet maxime nesciunt?
-        </div>
-      </div>
-      <div class="col-md-3 ">
-        <div class="row">
-          image
-        </div>
-        <div class="row">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate laudantium voluptas quam dignissimos, perspiciatis sunt,
-          quis deserunt ut animi distinctio debitis quisquam nobis, dolorum tenetur praesentium sit expedita nesciunt cumque.
-        </div>
-      </div>
-
-
+    <div class="col-md-4   shadow " style="height: 40vh; background-color:grey;">
+      fotoke
     </div>
   </div>
+</div>
 
-  <div class="container">
-    <div class="row">
-      <div class="container">
-        <h2 class="float-right">Waar is de grens?</h2>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 float-left shadow  " style="height: 40vh; background-color:grey;">
-            fotoke
-          </div>
-          <div class="col-md-6 offset-md-2 float-right">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident unde, voluptates corporis vitae delectus suscipit non
-              cumque eum, itaque cum neque corrupti ut molestiae aliquid optio doloremque sapiente in temporibus.
+<div class="container">
+  <div class="row">
+    <div class="container">
+      <h2 class="float-right">Statistieken</h2>
+      <div id=countdown-wrap>
+          <div id="goal">$10,000</div>
+          <div id="glass">
+            <div id="progress">
             </div>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number">16%</span>
+            <span class="goal-label">Funded</span>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number">$1,640</span>
+            <span class="goal-label">Raised</span>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number"><div id="countdown"></div></span>
+            <span class="goal-label">Days to Go</span>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number">38</span>
+            <span class="goal-label">Sponsors</span>
+          </div>
+        </div>
     </div>
   </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="container">
+
+      <h2 class="">Hoe kan je iets aangeven</h2>
+
+      <div class="row mt-5 ml-0">
+        <div class="col">
+          <h4 class="red">Praat erover </h4>
+          <p>
+            Spreek je partner, je ouders, of iemand uit je vrienden- of familiekring aan.</p>
+        </div>
+      </div>
+
+
+      <div class="row mt-5 ml-0">
+        <div class="col">
+          <h4 class="red">Hulplijn 1712 </h4>
+          <p>
+            Bij de hulplijn 1712 kan je terecht met vragen over (lichamelijk, psychisch of seksueel) geweld, misbruik en kindermishandeling.
+            Je wordt geholpen door hulpverleners van de centra voor algemeen welzijnswerk en de vertrouwenscentra kindermishandeling
+            . </p>
+        </div>
+      </div>
+      <div class="row mt-5 ml-0">
+        <div class="col">
+          <h4 class="red">Tele-Onthaal </h4>
+          <p>
+            Bij Tele-Onthaal kan je anoniem je verhaal kwijt als je het moeilijk hebt: op het nummer 106 of via chat.</p>
+        </div>
+      </div>
+
+      <a href="/waar-kan-je-terecht" class="btn buttonBlue shadow link white mt-5"> Klik voor meer info </a>
+    </div>
+  </div>
+
+
+</div>
 
 @endsection
