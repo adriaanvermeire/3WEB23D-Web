@@ -17,11 +17,10 @@
   }else {
     $bg = 'background-green';
   }
-
 @endphp
 <body class='{{ $bg }}'>
+  @include('components.header')
   <main>
-    @include('components.header')
     @yield('content')
   </main>
   @if (!isset($no_footer))
