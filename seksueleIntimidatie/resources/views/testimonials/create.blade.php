@@ -26,6 +26,7 @@
               <label for="body">Je verhaal</label>
               <textarea name="body" class="form-control shadow" rows="10" id="body"></textarea>
           </div>
+          <span class="red" style="font-size: .9rem;"><strong> Het delen van je verhaal gebeurt in volledige anonimiteit. Je e-mailadres wordt niet getoond. <br> Ook wordt je verhaal eerst in vertrouwen gecontroleerd door onze medewerkers vooraleer deze op onze website wordt getoond.</strong></span></br>
           <button type="submit" class="btn buttonGreen shadow">Deel je verhaal</button>
         </form>
       </div>
