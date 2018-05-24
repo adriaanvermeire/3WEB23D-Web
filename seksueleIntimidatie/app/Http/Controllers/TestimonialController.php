@@ -46,7 +46,14 @@ class TestimonialController extends Controller
     $testimonial->body = $request->body;
 
     $testimonial->save();
-    return redirect()->route('testimonials.index');
+
+    $data = [
+      'title' => 'Verhaal toegevoegd!',
+      'testimonial_title' => $testimonial->title,
+      'no_footer' => true,
+    ];
+
+    return view('testimonials.success', $data);
   }
 
   function accept_testimonial($id){
