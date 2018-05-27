@@ -161,29 +161,51 @@ Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen met
   <div class="row">
     <div class="container">
       <h2 class="float-right">Statistieken</h2>
-      <div id=countdown-wrap>
-          <div id="goal">$10,000</div>
+      <div class="container">
+          <div id=""class="float-left">
+              <h4 class="red">Wie zijn de slachtoffers</h4>
+                @for ($i=0; $i < 10; $i++)
+                @if ($i == 1 || $i == 2 || $i == 0)
+                <i class="fas fa-female red" ></i>
+                @else
+        
+                <i class="fas fa-female"></i>
+                @endif
+                @endfor
+                
+                <br>
+        
+                @for ($i=0; $i < 10; $i++)
+                @for($y=0; $y < 10; $y++)
+                @if ($i == 0 && $y ==0  || $i == 0 && $y == 1 || $i == 0 && $y == 2)
+                <i class="fas fa-male red" ></i>
+                @else
+        
+                <i class="fas fa-male"></i>
+                @endif
+                @endfor
+                <br>
+                @endfor
+          </div>
+      <div id=countdown-wrap > 
+        <h4 class="turn red" id="titel1">Meldingen per dag</h4>
+        <p id="five" class="turn">5</p>
+        <p id="ten" class="turn">10</p>
+        <p id="twenty" class="turn">20</p>
+        <p id="thirty" class="turn red">30</p>
+       
+          
           <div id="glass">
             <div id="progress">
             </div>
           </div>
-          <div class="goal-stat">
-            <span class="goal-number">16%</span>
-            <span class="goal-label">Funded</span>
-          </div>
-          <div class="goal-stat">
-            <span class="goal-number">$1,640</span>
-            <span class="goal-label">Raised</span>
-          </div>
-          <div class="goal-stat">
-            <span class="goal-number"><div id="countdown"></div></span>
-            <span class="goal-label">Days to Go</span>
-          </div>
-          <div class="goal-stat">
-            <span class="goal-number">38</span>
-            <span class="goal-label">Sponsors</span>
-          </div>
-        </div>
+         
+        
+
+      </div>
+    </div>
+     
+      </div>
     </div>
   </div>
 
