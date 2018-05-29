@@ -62,7 +62,7 @@ class TestimonialController extends Controller
     $test->published = true;
     $test->save();
 
-    return redirect()->route('admin.testimonials');
+    return redirect()->route('admin.index');
   }
 
   function reject_testimonial($id){
@@ -71,7 +71,7 @@ class TestimonialController extends Controller
     $test->published = false;
     $test->save();
 
-    return redirect()->route('admin.testimonials');
+    return redirect()->route('admin.index');
   }
 
   function highlight($id) {
