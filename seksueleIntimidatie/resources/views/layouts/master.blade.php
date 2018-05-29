@@ -18,7 +18,7 @@
   }
   $bg = 'background-' . $color;
 @endphp
-<body class='{{ $bg }}'>
+<body class='{{ $bg }}' id='body'>
   @include('components.header')
   <main>
     @yield('content')

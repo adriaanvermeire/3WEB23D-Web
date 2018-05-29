@@ -87,9 +87,21 @@
         </div>
 
         <div class="scroll-up bg-red h-100">
-          <a href="#" data-scroll-to="body" data-speed="500">
+          <a href="#">
             <i class="fas fa-arrow-up fa-2x"></i>
           </a>
         </div>
   </div>
 </footer>
+
+@push('scripts')
+  <script type="text/javascript">
+  $('.scroll-up').click(function(e){
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  </script>
+@endpush
