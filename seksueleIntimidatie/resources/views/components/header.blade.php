@@ -1,13 +1,15 @@
 <header class="navbar">
-  <span class="d-flex align-items-center align-self-start">
-    <a href="{!! route('home') !!}" class="navbar-brand ">
-      <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen"></a>
-    </a>
-    @auth
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><a href="{!! route('admin.index') !!}" class='nav-link text-dark'>Admin</a></li>
-    </ul>
-    @endauth
+  <span class="d-flex align-items-start align-self-start">
+    <span class='d-flex flex-column align-items-center'>
+      <a href="{!! route('home') !!}" class="navbar-brand m-0">
+        <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen"></a>
+      </a>
+      @auth
+      <ul class="navbar-nav align-self-stretch">
+        <li class="nav-item  d-flex justify-content-center bg-red"><a href="{!! route('admin.index') !!}" class='nav-link text-dark'>Admin</a></li>
+      </ul>
+      @endauth
+    </span>
     <h1 class='mt-5 ml-4'>{{ env('APP_NAME') }}</h1>
   </span>
   @if (!Request::is('/'))
