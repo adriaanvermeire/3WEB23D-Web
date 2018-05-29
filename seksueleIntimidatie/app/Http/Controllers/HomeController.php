@@ -8,6 +8,8 @@ class HomeController extends Controller
 {
 
     function index(){
-      return view('index', ['no_footer' => true]);
+      $colors = ['red', 'yellow', 'blue', 'green'];
+      $color = $colors[array_rand($colors)];
+      return view('index', ['no_footer' => true, 'color' => $color]);
     }
 }
