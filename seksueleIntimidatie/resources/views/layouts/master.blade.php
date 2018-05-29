@@ -14,8 +14,6 @@
 @php
   if(isset($color)){
     $bg = 'background-' . $color;
-  }else {
-    $bg = 'background-green';
   }
 @endphp
 <body class='{{ $bg }}'>
