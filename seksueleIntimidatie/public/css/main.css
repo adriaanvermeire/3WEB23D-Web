@@ -355,6 +355,12 @@ footer .contact-option .buttonRect {
   margin-right: 0px;
 }
 
+/* ADMIN */
+
+.adminSection h2 {
+  margin: 0;
+}
+
 /* NAV */
 
 #HOEPAGE-wat:hover {
