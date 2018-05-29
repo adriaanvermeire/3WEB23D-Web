@@ -12,11 +12,11 @@
         <title>@yield('title')</title>
 </head>
 @php
-  if(isset($color)){
-    $bg = 'background-' . $color;
-  }else {
-    $bg = 'background-green';
+  if(!isset($color)){
+    $colors = ['red', 'yellow', 'blue', 'green'];
+    $color = $colors[array_rand($colors)];
   }
+  $bg = 'background-' . $color;
 @endphp
 <body class='{{ $bg }}'>
   @include('components.header')

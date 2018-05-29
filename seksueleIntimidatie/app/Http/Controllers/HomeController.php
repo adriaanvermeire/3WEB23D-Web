@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
 
     function index(){
+
       return view('index', ['no_footer' => true]);
     }
 }
