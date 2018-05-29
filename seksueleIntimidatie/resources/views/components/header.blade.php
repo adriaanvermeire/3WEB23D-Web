@@ -8,6 +8,7 @@
       <li class="nav-item"><a href="{!! route('admin.index') !!}" class='nav-link text-dark'>Admin</a></li>
     </ul>
     @endauth
+    <h1 class='mt-5 ml-4'>{{ env('APP_NAME') }}</h1>
   </span>
   @if (!Request::is('/'))
 
