@@ -1,6 +1,6 @@
 @extends('layouts/master')
 
-@section('title', 'admin')
+@section('title', 'Admin')
 
 @section('content')
 
@@ -8,10 +8,10 @@
   <h1 class="text-center red mt-5">Admin Panel</h1>
   <p>Hier kan de admin de content op de pagina aanpassen. Per sectie van de website zal je hier ook een onderdeel terugvinden. Daaronder staat dan diens content.</p>
   <span>
-    <a href="#what" class="btn btn-link admin-btn">Wat is het?</a>
-    <a href="#reaction" class="btn btn-link admin-btn">Hoe reageren?</a>
-    <a href="#testimonials" class="btn btn-link admin-btn">Hun verhalen</a>
-    <a href="#contact" class="btn btn-link admin-btn">Waar terecht?</a>
+    <a href="#what" class="btn btn-outline-primary admin-btn">Wat is het?</a>
+    <a href="#reaction" class="btn btn-outline-primary admin-btn">Hoe reageren?</a>
+    <a href="#testimonials" class="btn btn-outline-primary admin-btn">Hun verhalen</a>
+    <a href="#contact" class="btn btn-outline-primary admin-btn">Waar terecht?</a>
   </span>
   @include('admin.components.newTestimonial', ['unseen', $unseen])
   @include('admin.components.what')
