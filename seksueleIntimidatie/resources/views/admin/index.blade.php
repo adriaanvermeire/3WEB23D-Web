@@ -44,3 +44,13 @@
   </div>
 </div> --}}
 @endsection
+
+@push('scripts')
+  <script type="text/javascript">
+  $('.admin-btn').click(function(e){
+    e.preventDefault();
+    var goal = e.target.hash.replace('#', '');
+    document.getElementById(goal).scrollIntoView({behavior: 'smooth'});
+  });
+  </script>
+@endpush
