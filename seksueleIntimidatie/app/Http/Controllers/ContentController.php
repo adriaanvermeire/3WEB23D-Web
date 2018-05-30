@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Content;
+use Purify;
 
 class ContentController extends Controller
 {
@@ -16,7 +17,7 @@ class ContentController extends Controller
       // TODO: Add validation
       $content = Content::findOrFail($request->id);
       $content->title = $request->title;
-      $content->body = $request->body;
+      $content->body = Purify::clean($request->body);
       $content->save();
 
       return redirect()->route('admin.index');

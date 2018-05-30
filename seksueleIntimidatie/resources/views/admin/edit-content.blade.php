@@ -2,6 +2,11 @@
 
 @section('title', 'Admin | Content bewerken')
 
+@push('styles')
+<!-- include summernote css/js-->
+<link href="{!! asset('css/summernote.css') !!}" rel="stylesheet">
+@endpush
+
 @section('content')
   <div class="container mt-5">
   <h1 class="text-center red">Admin | Content bewerken</h1>
@@ -20,11 +25,21 @@
               value="{{ $content->title }}">
           </div>
           <div class="form-group">
-            <label for="body">Inhoud: </label>
-            <textarea id="body" name="body" class="form-control shadow" rows="10">{{ $content->body }}</textarea>
+            <label for="summernote">Inhoud: </label>
+            <textarea id="summernote" name="body" class="form-control shadow" rows="10">{{ $content->body }}</textarea>
           </div>
           <input type="hidden" name="id" value="{{ $content->id }}">
           <button type="submit" class="btn buttonGreen shadow">Sla content op</button>
         </form>
   </div>
 @endsection
+
+@push('scripts')
+<script src="{!! asset('js/summernote.js') !!}"></script>
+<script src="{!! asset('js/summernote-nl-NL.js') !!}"></script>
+<script>
+$(document).ready(function() {
+  $('#summernote').summernote({ lang: 'nl-NL' });
+});
+</script>
+@endpush

@@ -7,7 +7,7 @@
   <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
-        <p>{{ $content[0]->body }}</p>
+        <p>{!! $content[0]->body !!}</p>
       </div>
     </div>
   </div>
@@ -17,7 +17,7 @@
   <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
-        <p>{{ $content[1]->body }}</p>
+        <p>{!! $content[1]->body !!}</p>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
         <div class="card-title">
           <h5>{{ $content[2]->title }}</h5>
         </div>
-        <div class="card-text">{{ $content[2]->body }}</div>
+        <div class="card-text">{!! $content[2]->body !!}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.jac.be/chat" target="_blank">Ga naar de chat</a>
@@ -44,7 +44,7 @@
         <div class="card-title">
           <h5>{{ $content[3]->title }}</h5>
         </div>
-        <div class="card-text">{{ $content[3]->body }}</div>
+        <div class="card-text">{!! $content[3]->body !!}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.awel.be/chat" target="_blank">Ga naar de chat</a>
@@ -56,7 +56,7 @@
         <div class="card-title">
           <h5>{{ $content[4]->title }}</h5>
         </div>
-        <div class="card-text">{{ $content[4]->body }}</div>
+        <div class="card-text">{!! $content[4]->body !!}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.tele-onthaal.be" target="_blank">Ga naar de chat of hulplijn</a>
@@ -72,7 +72,7 @@
         <div class="card-title">
           <h5>{{ $content[5]->title }}</h5>
         </div>
-        <div class="card-text">{{ $content[5]->body }}</div>
+        <div class="card-text">{!! $content[5]->body !!}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.nupraatikerover.be/" target="_blank">Ga naar de chat</a>
@@ -86,7 +86,7 @@
         <div class="card-title">
           <h5>{{ $content[6]->title }}</h5>
         </div>
-        <div class="card-text">{{ $content[6]->body }}</div>
+        <div class="card-text">{!! $content[6]->body !!}</div>
       </div>
       <div class="card-footer">
         <a href="https://www.clbchat.be/" target="_blank">Ga naar de chat</a>
@@ -100,7 +100,7 @@
         <div class="card-title">
           <h5>{{ $content[7]->title }}</h5>
         </div>
-        <div class="card-text">{{ $content[7]->body }}</div>
+        <div class="card-text">{!! $content[7]->body !!}</div>
       </div>
       <div class="card-footer">
         <a href="https://1712.be/" target="_blank">Ga naar de hulplijn</a>

@@ -147,6 +147,7 @@ body.background-red {
 .form-control{
     border-radius: 0;
     border: none;
+    background-color: #f5f8fa;
 }
 
 
@@ -425,4 +426,12 @@ footer .contact-option .buttonRect {
 
 .svgnavani {
   transition: all 0.3s;
+}
+
+.note-fontname,
+.note-table,
+[data-original-title="Picture"],
+[data-original-title="Video"],
+[for="sn-checkbox-open-in-new-window"] {
+  display: none;
 }
