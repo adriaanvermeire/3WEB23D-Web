@@ -53,6 +53,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
   Route::get('/scenarios/{id}', 'ReactionController@edit')->name('edit-scenario');
   Route::post('/scenarios', 'ReactionController@post')->name('post-scenario');
   Route::delete('/scenarios/{id}', 'ReactionController@delete')->name('delete-scenario');
+
+  // Admin Content
+  Route::get('/content/{id}', 'ContentController@edit')->name('edit-content');
+  Route::post('/content', 'ContentController@update')->name('post-content');
 });
 
 Route::get('/admin/login', 'AdminController@login')->name('login');
