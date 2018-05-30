@@ -3,28 +3,21 @@
   <h1 class="text-center red">Waar kan je terecht?</h1>
 </div>
 <div class="container mt-5">
-  <h2 class="text-center black">Praat erover</h2>
+  <h2 class="text-center black">{{ $content[0]->title }}</h2>
   <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
-        <p>Allereerst kan je erover praten met de CLB dienst van je school. Deze mensen zullen je graag verder helpen. Anderzijds
-          kan je ook terecht bij je zorgleerkracht op school. Deze persoon gaat er alles aan doen om je terug op je gemak
-          te stellen. Als laatste, en zeker daarom niet de minst beste oplossing, is praten met je ouders. Die zullen dan
-          de juiste personen aanspreken in jouw plaats.
-        </p>
+        <p>{{ $content[0]->body }}</p>
       </div>
     </div>
   </div>
 </div>
 <div class="container mt-5">
-  <h2 class="text-center black">Online chats en hulplijnen</h2>
+  <h2 class="text-center black">{{ $content[1]->title }}</h2>
   <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
-        <p>
-          Als je niet goed weet tegen wie eerst te praten en heb je liever eerst een anoniem gesprek met iemand online, dan kan je
-          terecht bij volgende online chats waarbij ook deze mensen je graag verder helpen.
-        </p>
+        <p>{{ $content[1]->body }}</p>
       </div>
     </div>
   </div>
@@ -35,13 +28,9 @@
       </div>
       <div class="card-body">
         <div class="card-title">
-          <h5>JAC</h5>
+          <h5>{{ $content[2]->title }}</h5>
         </div>
-        <div class="card-text">
-          Het JAC <strong>helpt jongeren met al hun vragen en problemen</strong>. Problemen thuis? Op zoek naar je eigen
-          stek? Vragen over seks? Slachtoffer van geweld of misbruik? Geldproblemen? Vragen over drugs? Of over pesten? Informatie
-          nodig om zelfstandig te wonen? Of over je rechten en plichten? … Je kan bij het JAC terecht met elke vraag.
-        </div>
+        <div class="card-text">{{ $content[2]->body }}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.jac.be/chat" target="_blank">Ga naar de chat</a>
@@ -53,13 +42,9 @@
       </div>
       <div class="card-body">
         <div class="card-title">
-          <h5>AWEL</h5>
+          <h5>{{ $content[3]->title }}</h5>
         </div>
-        <div class="card-text">
-          Awel luistert naar alle kinderen en jongeren met een vraag, een verhaal en/of een probleem. Alle kinderen en jongeren kunnen
-          hen anoniem contacteren over alles wat ze bezighoudt. Ze zijn er voor hen door te luisteren, mee te voelen en mee
-          te denken.
-        </div>
+        <div class="card-text">{{ $content[3]->body }}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.awel.be/chat" target="_blank">Ga naar de chat</a>
@@ -69,12 +54,9 @@
       <div class="card-img-top card-image"><img class='img-fluid h-100' src="{!! asset('images/tele-onthaal.png') !!}" alt="Tele-onthaal"></div>
       <div class="card-body">
         <div class="card-title">
-          <h5>Tele-onthaal</h5>
+          <h5>{{ $content[4]->title }}</h5>
         </div>
-        <div class="card-text">
-          Soms moet je al je moed bijeen rapen voor een gesprek. Of vraag je je af of zo’n gesprek wel veilig is. Om het voor jou zo
-          makkelijk mogelijk te maken om te praten, houden we de drempel zo laag mogelijk.
-        </div>
+        <div class="card-text">{{ $content[4]->body }}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.tele-onthaal.be" target="_blank">Ga naar de chat of hulplijn</a>
@@ -88,12 +70,9 @@
       </div>
       <div class="card-body">
         <div class="card-title">
-          <h5>Nu Praat Ik Erover</h5>
+          <h5>{{ $content[5]->title }}</h5>
         </div>
-        <div class="card-text">
-          Ben je minderjarig en heb je vragen over seksueel misbruik? Word je seksueel lastig gevallen? Word je vaak uitgescholden?
-          Is er iemand die je fysiek pijn doet? Ken je iemand met zo’n probleem?
-        </div>
+        <div class="card-text">{{ $content[5]->body }}</div>
       </div>
       <div class="card-footer">
         <a href="http://www.nupraatikerover.be/" target="_blank">Ga naar de chat</a>
@@ -105,13 +84,9 @@
       </div>
       <div class="card-body">
         <div class="card-title">
-          <h5>CLB Chat</h5>
+          <h5>{{ $content[6]->title }}</h5>
         </div>
-        <div class="card-text">
-          Op de chat praat je met een medewerker van het CLB. Je kan je verhaal vertellen, een vraag stellen, … of samen met je chatbegeleider
-          bekijken wat je zou willen bereiken, en hoe je dat kan aanpakken. De CLB-medewerker chat enkel met jou. Een chatgesprek
-          duurt maximum 45 minuten, zodat ook andere leerlingen een kans krijgen om te chatten.
-        </div>
+        <div class="card-text">{{ $content[6]->body }}</div>
       </div>
       <div class="card-footer">
         <a href="https://www.clbchat.be/" target="_blank">Ga naar de chat</a>
@@ -123,12 +98,9 @@
       </div>
       <div class="card-body">
         <div class="card-title">
-          <h5>Hulplijn 1712</h5>
+          <h5>{{ $content[7]->title }}</h5>
         </div>
-        <div class="card-text">
-          Bij de hulplijn 1712 kan je terecht met vragen over (lichamelijk, psychisch of seksueel) geweld, misbruik en kindermishandeling. 
-          Je wordt geholpen door hulpverleners van de centra voor algemeen welzijnswerken de vertrouwenscentra kindermishandeling.
-        </div>
+        <div class="card-text">{{ $content[7]->body }}</div>
       </div>
       <div class="card-footer">
         <a href="https://1712.be/" target="_blank">Ga naar de hulplijn</a>
@@ -137,17 +109,11 @@
   </div>
 </div>
 <div class="container mt-5">
-  <h2 class="text-center black">Aangifte doen</h2>
+  <h2 class="text-center black">{{ $content[8]->title }}</h2>
   <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
-        <p>Heb je er met iemand over gepraat en is het duidelijk geworden dat de feiten strafbaar zijn of dat er dringende politiehulp
-          nodig is, dan kan je terecht op het noodnummer van de politie. Dit is <strong>101</strong>.
-        </p>
-        <p>
-          Is de hulp niet dringend? Dan kan je De Blauwe Lijn bellen. Dit is <strong>0800 123 12</strong>. Ook kan een online
-          afspraak maken met de lokale politie bij het Blauwe Loket op <a href="https://www.politieantwerpen.be/e-loket">https://www.politieantwerpen.be/e-loket</a>.
-        </p>
+        {!! $content[8]->body !!}
       </div>
     </div>
   </div>
