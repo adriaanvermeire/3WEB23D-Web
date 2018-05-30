@@ -1,6 +1,6 @@
 <?php
 
-  public $contentblocks = [
+  $contentblocks = [
   [ 'page' => 'contact',
     'section' => 0,
     'title' => 'Praat erover',

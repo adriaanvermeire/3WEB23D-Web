@@ -5,7 +5,6 @@ use App\Content;
 
 class ContentSeeder extends Seeder
 {
-    include 'content.php';
 
     /**
      * Run the database seeds.
@@ -14,8 +13,9 @@ class ContentSeeder extends Seeder
      */
     public function run()
     {
-        for ($i=0; $i < count($this->contentblocks); $i++) {
-          Content::create($this->contentblocks[$i]);
+        include 'content.php';
+        for ($i=0; $i < count($contentblocks); $i++) {
+          Content::create($contentblocks[$i]);
         }
     }
 }
