@@ -36,9 +36,10 @@
 
 @push('scripts')
 <script src="{!! asset('js/summernote.js') !!}"></script>
+<script src="{!! asset('js/summernote-nl-NL.js') !!}"></script>
 <script>
 $(document).ready(function() {
-  $('#summernote').summernote();
+  $('#summernote').summernote({ lang: 'nl-NL' });
 });
 </script>
 @endpush
