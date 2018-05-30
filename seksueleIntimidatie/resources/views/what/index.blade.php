@@ -40,7 +40,7 @@
   <div class="row d-flex justify-content-between">
     <div class="col-md-3 ">
       <div class="row">
-        <h3 class="red"> Verbaal </h3>
+        <h3 class="red">    {{ $content[2]->title }}</h3>
       </div>
       <div class="row shadow bg-white ">
 
@@ -54,7 +54,7 @@
     </div>
     <div class="col-md-3   ">
       <div class="row">
-        <h3 class="red"> Non-verbaal </h3>
+        <h3 class="red"> {{ $content[3]->title }} </h3>
       </div>
       <div class="row shadow bg-white">
         <ul class="list-group ">
@@ -67,7 +67,7 @@
 
     <div class="col-md-3  ">
       <div class="row">
-        <h2 class="red">Fysiek</h2>
+        <h2 class="red">{{ $content[4]->title }}</h2>
 
       </div>
       <div class="row shadow bg-white">
@@ -84,7 +84,7 @@
 <div class="container">
   <div class="row">
     <div class="container">
-      <h2 class="float-right">Enkele voorbeelden van seksuele intimidatie</h2>
+      <h2 class="float-right">{{ $content[5]->title }}</h2>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
 <div class="container">
   <div class="row">
     <div class="container">
-      <h2 class="">Verschil tussen aanranding en verkrachting </h2>
+      <h2 class="">{{ $content[6]->title }} </h2>
       
       {!! $content[6]->body !!}
     </div>
@@ -102,7 +102,7 @@
 <div class="container">
   <div class="row">
     <div class="container">
-      <h2 class="float-right">Waar is de grens?</h2>
+      <h2 class="float-right">{{ $content[7]->title }}</h2>
     </div>
   </div>
   <div class="row">

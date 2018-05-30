@@ -48,6 +48,9 @@
 
 Is de hulp niet dringend? Dan kan je De Blauwe Lijn bellen. Dit is 0800 123 12. Ook kan een online afspraak maken met de lokale politie bij het Blauwe Loket op <a href="https://www.politieantwerpen.be/e-loket">https://www.politieantwerpen.be/e-loket</a>.',
   ],
+
+
+
   [ 'page' => 'what',
   'section' => 0,
   'title' => 'inleiding',
@@ -64,7 +67,7 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   ],
   [ 'page' => 'what',
   'section' => 2,
-  'title' => 'verbaal opsomming ',
+  'title' => 'Verbaal',
   'body' => '<li class="list-group-item">seksuele opmerkingen maken</li> <li class="list-group-item">seksuele getinte sms&acute;jes of briefjes</li>
   <li class="list-group-item">intieme vragen stellen over iemands privéleven</li>
   <li class="list-group-item">voorstellen doen voor afspraakjes met de bedoeling daarbij seksueel contact te hebben</li>',
@@ -72,14 +75,14 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   
   [ 'page' => 'what',
   'section' => 3,
-  'title' => 'non-verbaal opsomming',
+  'title' => 'Non-verbaal',
   'body' => ' <li class="list-group-item">iemand langdurig aanstaren</li>
   <li class="list-group-item">seksueel getinte afbeeldingen tonen (in de werkkamer of via internet of intranet)</li>
   <li class="list-group-item">seksueel gerichte gebaren maken</li>',
   ],
   [ 'page' => 'what',
   'section' => 4,
-  'title' => 'fysiek opsomming',
+  'title' => 'Fysiek',
   'body' => ' <li class="list-group-item">vastpakken, arm om schouder leggen, knijpen </li>
   <li class="list-group-item">iemand (proberen te) zoenen</li>
   <li class="list-group-item">iemand de doorgang versperren</li>
@@ -89,7 +92,7 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
 
   [ 'page' => 'what',
   'section' => 5,
-  'title' => 'voorbeelden',
+  'title' => 'Enkele voorbeelden van seksuele intimidatie',
   'body' => '   <h4 class="red ">seksuele getinte opmerkingen</h4>
   <h4 class="red mt-3">Ongepaste gebaren en geluiden</h4>
   <h4 class="red mt-3">Opdringerig gedrag</h4>
@@ -99,13 +102,13 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   ],
   [ 'page' => 'what',
   'section' => 6,
-  'title' => 'Verschil tussen verkrachting en aanranding',
+  'title' => 'Verschil tussen aanranding en verkrachting',
   'body' => 'Bij verkrachting is er altijd sprake van penetratie. Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen
   met lichamelijk contact maar zonder penetratie',
   ],
   [ 'page' => 'what',
   'section' => 7,
-  'title' => 'Waar is de grens',
+  'title' => 'Waar is de grens?',
   'body' => ' <div class="row p-2">
   <h4 class="red"> Ongewenst lichamelijk contact (aanranding) </h4>Bij jongeren onder de 16 jaar wordt seksueel contact gelijkgesteld
   aan aanranding zelfs wanneer de jongere ermee instemt! Aanranding kan bestraft worden van 6 maanden gevangenisstraf
