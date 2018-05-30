@@ -359,3 +359,17 @@ footer .contact-option .buttonRect {
   left: 40%;
  top: 0%
 }
+
+.fa-male{
+  font-size: 35px;
+}
+
+
+.fa-female{
+  font-size: 35px;
+}
+
+.leeftijdklasse1{font-size: 30px;}
+.leeftijdklasse2{font-size: 40px;}
+.leeftijdklasse3{font-size: 50px;}
+.leeftijdklasse4{font-size: 60px;}

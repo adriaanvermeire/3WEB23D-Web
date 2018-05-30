@@ -110,8 +110,8 @@
   <div class="row">
     <div class="container">
       <h2 class="">Verschil tussen aanranding en verkrachting </h2>
-      Bij verkrachting is er altijd sprake van penetratie.
-Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen met lichamelijk contact maar zonder penetratie
+      Bij verkrachting is er altijd sprake van penetratie. Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen
+      met lichamelijk contact maar zonder penetratie
 
     </div>
   </div>
@@ -161,61 +161,69 @@ Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen met
   <div class="row">
     <div class="container">
       <h2 class="float-right">Statistieken</h2>
-      <div class="container">
-          <div id=""class="float-left">
-              <h4 class="red">Wie zijn de slachtoffers</h4>
-                @for ($i=0; $i < 10; $i++)
-                @if ($i == 1 || $i == 2 || $i == 0)
-                <i class="fas fa-female red" ></i>
-                @else
-        
-                <i class="fas fa-female"></i>
-                @endif
-                @endfor
-                
-                <br>
-        
-                @for ($i=0; $i < 10; $i++)
-                @for($y=0; $y < 10; $y++)
-                @if ($i == 0 && $y ==0  || $i == 0 && $y == 1 || $i == 0 && $y == 2)
-                <i class="fas fa-male red" ></i>
-                @else
-        
-                <i class="fas fa-male"></i>
-                @endif
-                @endfor
-                <br>
-                @endfor
-          </div>
-      <div id=countdown-wrap > 
-        <h4 class="turn red" id="titel1">Meldingen per dag</h4>
-        <p id="five" class="turn">5</p>
-        <p id="ten" class="turn">10</p>
-        <p id="twenty" class="turn">20</p>
-        <p id="thirty" class="turn red">30</p>
-       
-          
-          <div id="glass">
-            <div id="progress">
-            </div>
-          </div>
-         
-        
-
-      </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 text-center mb-5">
+      <h4 class="text-center red">Meldingen per dag</h4>
+      <p class="text-center pt-5 ">Er zijn zo'n ongeveer 30 meldingen per dag die gaan over seksuele intimidatie bij jongeren. </p>
+
+      <img src="{!! asset('images/statistiek12.png') !!}" class="img-fluid mb-3 " alt="">
+    </div>
+
+
+    <div class="col-md-4 text-center mb-5 ">
+
+      <h4 class="text-center red ">Hoeveel jongeren hebben al te maken gehad met seksuele intimidatie</h4>
+      <p class="text-center pt-5 mb-5 "> </p>
+      
+      <h5>3 op de 10 meisjes</h5>
+      @for ($i = 0; $i
+      < 10; $i++) @if ($i < 3) <i class="fas fa-female red">
+        </i>
+        @else
+        <i class="fas fa-female"></i>
+        @endif @endfor
+        <br>
+        <br>
+        <h5>3 op de 100 jongens</h5>
+        @for ($i = 0; $i
+        < 5; $i++) @for ($y=0 ; $y < 20; $y++) @if ($i==0 && $y < 3 ) <i class="fas fa-male red">
+          </i>
+          @else
+          <i class="fas fa-male"></i>
+          @endif @endfor
+          <br> @endfor
+
+    </div>
+
+
+    <div class="col-md-4 mb-5 ">
+
+      <h4 class="text-center red ">Kwetsbare leeftijd</h4>
      
-      </div>
+     
+      <p class="text-center pt-5">De meeste kwetsbare leeftijd is tussen de 10 en 13 jaar oud. </p>
+ 
+          <img src="{!! asset('images/statistiek3-2.png') !!}" class="img-fluid pl-5 pr-5 mb-3 " alt="">
+  
+     
     </div>
   </div>
 
 </div>
 
+
+
+
+
+
+
 <div class="container">
   <div class="row">
     <div class="container">
 
-      <h2 class="">Hoe kan je iets aangeven</h2>
+      <h2 class="">Waar kan je zoal terecht?</h2>
 
       <div class="row mt-5 ml-0">
         <div class="col">
