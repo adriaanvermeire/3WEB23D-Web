@@ -36,6 +36,12 @@ class ReactionController extends Controller
 
     public function post(Request $request)
     {
+      $request->validate([
+        'name' => 'required|string|min:10|unique:how_scenarios',
+        'good' => 'required|string|min:10',
+        'bad' => 'required|string|min:10',
+      ]);
+
       $scenario = HowScenario::findOrNew($request->id);
       $scenario->name = $request->description;
       $scenario->good = $request->good;
