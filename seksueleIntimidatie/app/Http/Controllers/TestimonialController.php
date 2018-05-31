@@ -38,9 +38,13 @@ class TestimonialController extends Controller
     return view('testimonials.show', $data);
   }
 
-  public function post(Request $request){
-    $testimonial = new Testimonial();
+    $request->validate([
+      'email' => 'required|email',
+      'title' => 'required|string|min:4|max:255',
+      'body' => 'required|string|min:50|max:2500',
+    ]);
 
+    $testimonial = new Testimonial();
     $testimonial->email = $request->email;
     $testimonial->title = $request->title;
     $testimonial->body = $request->body;
