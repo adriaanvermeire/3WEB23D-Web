@@ -18,7 +18,7 @@ class ContentController extends Controller
     {
       $request->validate([
         'title' => 'required|string|min:4|unique:contents,'.$request->id,
-        'body' => 'required|string|min:20',
+        'body' => 'nullable|string|min:20',
       ]);
       
       $content = Content::findOrFail($request->id);
