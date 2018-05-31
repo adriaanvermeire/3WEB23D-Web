@@ -7,12 +7,14 @@ use Illuminate\Http\Request;
 class WhatController extends Controller
 {
     public $color = 'yellow';
+    public $title = 'Wat is seksuele intimidatie?';
 
-    public function index(){
-      return view('what.index', ['title' => 'Wat is seksuele intimidatie?', 'color' => $this->color]);
-    }
-
-    public function showSection($section){
-      return view('test', ['title' => $section, 'color' => $this->color]);
+    public function index()
+    {
+      $data = [
+        'title' => $this->title, 
+        'color' => $this->color,
+      ];
+      return view('what.index', $data);
     }
 }

@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-
-    function index(){
-
+    function index()
+    {
       return view('index', ['no_footer' => true]);
     }
 }

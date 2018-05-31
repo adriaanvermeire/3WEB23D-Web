@@ -19,8 +19,8 @@
               <td>
                 <a href='{!! route('admin.edit-content', ['id' => $section->id]) !!}' class="btn btn-warning btn-sm">Bewerken</a>
               </td>
-              <td>@truncate($scenario->title, 50)</td>
-              <td>@truncate($scenario->body, 50)</td>
+              <td>@truncate($section->title, 50)</td>
+              <td>@truncate($section->body, 50)</td>
             </tr>
           @endforeach
         </table>
