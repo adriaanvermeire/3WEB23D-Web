@@ -13,8 +13,10 @@ class ContentController extends Controller
       return view('admin.edit-content', ['content' => $poc]);
     }
 
-    public function update(Request $request){
-      // TODO: Add validation
+      $request->validate([
+        'title' => 'required|string|min:4|unique:contents,'.$request->id,
+        'body' => 'required|string|min:20',
+      ]);
       $content = Content::findOrFail($request->id);
       $content->title = $request->title;
       $content->body = Purify::clean($request->body);
