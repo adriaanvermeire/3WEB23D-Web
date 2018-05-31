@@ -19,14 +19,34 @@
         <form action="{!! route('admin.post-content') !!}" method="post">
           @csrf
           <div class="form-group">
-              <label for="title">Titel:</label>
+              @if (!$errors->first('title'))
+              <label for="title">Titel:
+              @else
+              <label for="title" class='red'>
+                <strong>Titel
+                <span class='red'>
+                {{ $errors->first('title') }}
+                </span>  
+              </strong>
+              @endif  
+            </label>
               <input name="title"  type="text" class="form-control shadow"
-              id="title" aria-describedby="title" placeholder="Omschrijving van het scenario"
-              value="{{ $content->title }}">
+              id="title" aria-describedby="title" placeholder="Omschrijving van de content"
+              value="{{ old('title') or $content->title }}" required>
           </div>
           <div class="form-group">
-            <label for="summernote">Inhoud: </label>
-            <textarea id="summernote" name="body" class="form-control shadow" rows="10">{{ $content->body }}</textarea>
+            @if (!$errors->first('body'))
+            <label for="summernote">Inhoud:
+            @else
+            <label for="summernote" class='red'>
+              <strong>Inhoud
+              <span class='red'>
+              {{ $errors->first('body') }}
+              </span>  
+            </strong>
+            @endif  
+            </label>
+            <textarea id="summernote" name="body" class="form-control shadow" rows="10">{{ old('body') or $content->body }}</textarea>
           </div>
           <input type="hidden" name="id" value="{{ $content->id }}">
           <button type="submit" class="btn buttonGreen shadow">Sla content op</button>
