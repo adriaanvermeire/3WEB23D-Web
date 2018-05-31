@@ -60,32 +60,33 @@ class TestimonialController extends Controller
     return view('testimonials.success', $data);
   }
 
-  function accept_testimonial($id){
-    $test = Testimonial::find($id);
-
+  function accept_testimonial($id)
+  {
+    $test = Testimonial::findOrFail($id);
     $test->published = true;
     $test->save();
 
     return redirect()->route('admin.index');
   }
 
-  function reject_testimonial($id){
-    $test = Testimonial::find($id);
-
+  function reject_testimonial($id)
+  {
+    $test = Testimonial::findOrFail($id);
     $test->published = false;
     $test->save();
 
     return redirect()->route('admin.index');
   }
 
-  function highlight($id) {
-    $current = Testimonial::where('highlight', 1)->first();
+  function highlight($id) 
+  {
+    $current = Testimonial::where('highlight', 1)->firstOrFail();
     if(isset($current)){
       $current->highlight = false;
       $current->save();
     }
     if (!isset($current) || $id != $current->id) {
-      $new = Testimonial::find($id);
+      $new = Testimonial::findOrFail($id);
       $new->highlight = true;
       $new->save();
     }
