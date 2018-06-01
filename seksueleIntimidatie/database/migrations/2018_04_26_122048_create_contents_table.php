@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWhatSectionsTable extends Migration
+class CreateContentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateWhatSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('what_sections', function (Blueprint $table) {
+        Schema::create('contents', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('section');
             $table->string('title')->unique();
             $table->text('body');
-            $table->boolean('published')->default(false);
+            $table->string('page'); // what, contact
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateWhatSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('what_sections');
+        Schema::dropIfExists('contents');
     }
 }

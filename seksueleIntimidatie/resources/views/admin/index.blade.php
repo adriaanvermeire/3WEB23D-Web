@@ -1,51 +1,26 @@
 @extends('layouts/master')
 
-@section('title', 'admin')
+@section('title', 'Admin')
 
 @section('content')
 
 <div class="container">
   <h1 class="text-center red mt-5">Admin Panel</h1>
-  <div class="card mx-auto shadow">
-    <div class="card-body">
-      <div class="card-title">
-      @if (isset($unseen) && count($unseen) > 0)
-        <h3>Nieuwe verhalen!<br/><small>Er zijn verhalen die moeten nagekeken worden.</small></h3>
-      @else
-        <h3><small>Geen nieuwe verhalen. Je bent bijgewerkt!</small></h3>
-      @endif
-      </div>
-      <div class="card-text">
-        De andere verhalen vind je <a href="{!! route('admin.testimonials') !!}">hier</a>.
-      @if (isset($unseen))
-        <table class='table'>
-        @foreach ($unseen as $testimonial)
-          <tr>
-            <td>
-              <a href='{!! route('admin.review', ['id' => $testimonial->id]) !!}' class="btn btn-warning btn-sm">Bekijken</a>
-            </td>
-            <td>@truncate($testimonial->title, 50)</td>
-            @php
-              $body = strip_tags($testimonial->body);
-            @endphp
-            <td>@truncate($body, 50)</td>
-            <td><date>{{ $testimonial->created_at }}</date></td>
-            <td class='d-flex justify-content-end'>
-              <div class="btn-group">
-                <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Publiceren</a>
-                <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Weerhouden</a>
-              </div>
-            </td>
-          </tr>
-        @endforeach
-        </table>
-      @endif
-      </div>
-    </div>
-  </div>
+  <p>Hier kan de admin de content op de pagina aanpassen. Per sectie van de website zal je hier ook een onderdeel terugvinden. Daaronder staat dan diens content.</p>
+  <span>
+    <a href="#what" class="btn btn-outline-primary admin-btn">Wat is het?</a>
+    <a href="#reaction" class="btn btn-outline-primary admin-btn">Hoe reageren?</a>
+    <a href="#testimonials" class="btn btn-outline-primary admin-btn">Hun verhalen</a>
+    <a href="#contact" class="btn btn-outline-primary admin-btn">Waar terecht?</a>
+  </span>
+  @include('admin.components.newTestimonial', ['unseen', $unseen])
+  @include('admin.components.what')
+  @include('admin.components.reaction', ['scenarios' => $scenarios])
+  @include('admin.components.testimonials', ['unseen' => $unseen, 'seen' => $seen])
+  @include('admin.components.contact')
 </div>
 
-<div class="container">
+{{-- <div class="container">
   <div class="card mx-auto mt-5 shadow">
     <div class="card-body">
       <div class="card-title">
@@ -67,5 +42,15 @@
       {!! Form::close() !!}
     </div>
   </div>
-</div>
+</div> --}}
 @endsection
+
+@push('scripts')
+  <script type="text/javascript">
+  $('.admin-btn').click(function(e){
+    e.preventDefault();
+    var goal = e.target.hash.replace('#', '');
+    document.getElementById(goal).scrollIntoView({behavior: 'smooth'});
+  });
+  </script>
+@endpush
