@@ -83,7 +83,7 @@
         <div class="blank"></div>
         <div class="info align-self-center">
           <span>© 2018 Antwerpen.be | </span>
-          <a href="#">Privacy &amp; gebruiksvoorwaarden</a>
+          <a href="https://www.antwerpen.be/nl/info/5310f241aaa8a74f6c8b458d/a-stad-uw-privacy-en-hoe-gebruiken" target="_blank">Privacy &amp; gebruiksvoorwaarden</a>
         </div>
 
         <div class="scroll-up bg-red h-100">

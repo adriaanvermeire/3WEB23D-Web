@@ -132,7 +132,6 @@ body.background-red {
 
 .form-control{
     border-radius: 0;
-    border: none;
 }
 
 
@@ -354,4 +353,9 @@ footer .contact-option .buttonRect {
 }
 .svg {
   position:absolute;
+}
+
+.contentimg {
+  width: auto;
+  height: auto;
 }
