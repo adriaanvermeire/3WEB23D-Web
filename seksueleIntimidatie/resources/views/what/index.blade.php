@@ -39,8 +39,8 @@
       <h2>Welke vormen zijn er?</h2>
     </div>
 
-    <div class="row">
-      <div class="col-md-3  ">
+    <div class="row  p-sm-2">
+      <div class="col-md-3">
         <div class="row">
           image
         </div>
@@ -49,7 +49,7 @@
           cumque! Saepe tempora nisi suscipit doloremque necessitatibus vel ipsam delectus velit, quis reprehenderit.
         </div>
       </div>
-      <div class="col-md-3  ">
+      <div class="col-md-3">
         <div class="row">
           image
         </div>
@@ -58,7 +58,7 @@
           repellendus ab dolores mollitia enim dolorum nesciunt. Tempore praesentium quaerat omnis perferendis facilis!
         </div>
       </div>
-      <div class="col-md-3 ">
+      <div class="col-md-3">
         <div class="row">
           image
         </div>
@@ -67,7 +67,7 @@
           doloribus. Nostrum reiciendis, quisquam ex at delectus quidem corporis amet maxime nesciunt?
         </div>
       </div>
-      <div class="col-md-3 ">
+      <div class="col-md-3">
         <div class="row">
           image
         </div>

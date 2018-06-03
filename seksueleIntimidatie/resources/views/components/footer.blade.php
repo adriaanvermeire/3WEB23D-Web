@@ -1,9 +1,7 @@
 <footer>
   <div class="container h-100 d-flex flex-column justify-content-between">
     <div class="row">
-      <div class="col-4">
-        <h5 class="text-white">Dienstverlening</h5>
-
+      <div class="col-md">
         <ul class='navigation'>
             <li>
               <a href="{!! route('home') !!}" title="Hoofdpagina" class="">
@@ -34,7 +32,7 @@
             </li>
         </ul>
       </div>
-      <div class="col-4 offset-4">
+      <div class="col-sm offset-md-4">
         <div class="contact-option">
           <h5 class="text-white">Contact met stad Antwerpen</h5>
           <a
