@@ -8,10 +8,18 @@ use App\Content;
 class ContactController extends Controller
 {
     public $color = 'red';
+    public $title = 'Waar kan je terecht?';
 
-    public function index(){
+    public function index()
+    {
+
       $content = Content::where('page', 'contact')->get();
 
-      return view('contact.index', ['content' => $content, 'title' => 'Waar kan je terecht?', 'color' => $this->color]);
+      $data = [
+        'content' => $content, 
+        'title' => $this->title, 
+        'color' => $this->color,
+      ];
+      return view('contact.index', $data);
     }
 }

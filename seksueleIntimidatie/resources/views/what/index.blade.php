@@ -7,8 +7,8 @@
   <h1 class="text-center red">Wat is intimidatie nu eigenlijk?</h1>
 </div>
 
-<div class="container shadow " style="height: 40vh; background-color:grey;">
-  fotoke
+<div class="container shadow p-0" style="height: 40vh; background-color:grey;">
+    <img class='img-fluid' style="max-height: 40vh; width: 100vw " src="{!! asset('images/intimidatie2.jpg') !!}" alt="Intimidatie">
 </div>
 <div class="container">
   <div class="row">
@@ -27,7 +27,13 @@
     </div>
   </div>
 </div>
-
+<div class="container ">
+  <div class="row">
+    <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
+      <img class='img-fluid' src="{!! asset('images/intimidatie1.jpg') !!}" alt="Intimidatie">
+    </div>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <h2>Welke vormen zijn er</h2>
@@ -52,9 +58,9 @@
   <div class="row">
     <div class="container">
       <h2 class="float-right">{{ $content[5]->title }}</h2>
+      {!! $content[5]->body !!}
     </div>
   </div>
-  {!! $content[5]->body !!}
 </div>
 <div class="container">
   <div class="row">
@@ -71,7 +77,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4 float-left shadow  " style="height: 40vh; background-color:grey;">
+    <div class="col-md-4 float-left shadow" style="height: 40vh; background-color:grey;">
       fotoke
     </div>
     <div class="col-md-6 offset-md-2 float-right">
@@ -85,8 +91,14 @@
   <div class="row d-flex justify-content-between">
     <div class="col-md-4 ml-0 "> {!! $content[8]->body !!}
     </div>
-    <div class="col-md-4 shadow " style="height: 40vh; background-color:grey;">
-      fotoke
+    <div class="row">
+      <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
+        <img class='img-fluid' src="{!! asset('images/intimidatie3.jpg') !!}" alt="Intimidatie">
+      </div>
+      <div class="col-md-6 offset-md-2 float-right">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident unde, voluptates corporis vitae delectus suscipit non
+              cumque eum, itaque cum neque corrupti ut molestiae aliquid optio doloremque sapiente in temporibus.
+      </div>
     </div>
   </div>
 </div>

@@ -8,13 +8,16 @@ use App\Content;
 class WhatController extends Controller
 {
     public $color = 'yellow';
+    public $title = 'Wat is seksuele intimidatie?';
 
-    public function index(){
+    public function index()
+    {
       $content = Content::where('page', 'what')->get();
-      return view('what.index', ['content' => $content,'title' => 'Wat is seksuele intimidatie?', 'color' => $this->color]);
-    }
-
-    public function showSection($section){
-      return view('test', ['title' => $section, 'color' => $this->color]);
+      $data = [
+        'content' => $content,
+        'title' => $this->title, 
+        'color' => $this->color,
+      ];
+      return view('what.index', $data);
     }
 }
