@@ -4,104 +4,112 @@
 
 @section('content')
 <div class="container mt-5">
-  <h1 class="text-center red">Wat is intimidatie nu eigenlijk?</h1>
-</div>
-
-<div class="container shadow p-0" style="height: 40vh; background-color:grey;">
-    <img class='img-fluid' style="max-height: 40vh; width: 100vw " src="{!! asset('images/intimidatie2.jpg') !!}" alt="Intimidatie">
-</div>
-<div class="container">
   <div class="row">
-    <div class="col-md-4  ">
+    <div class="col justify-content-center d-flex px-2">
+      <h1 class="red">Wat is intimidatie nu eigenlijk?</h1>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <figure class="figure">
+        <img src="{!! asset('images/intimidatie2.jpg') !!}" class="figure-img img-fluid" alt="Jongen leunt over meisje in gang">
+        <figcaption class="figure-caption">Jongen leunt over meisje in gang</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row my-2">
+    <div class="col-md-6 col-lg-4 px-2">
       {!! $content[0]->body !!}
     </div>
   </div>
-</div>
-<div class="container ">
-  <div class="row">
-      <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
-          <img class='img-fluid' src="{!! asset('images/intimidatie1.jpg') !!}" alt="Intimidatie">
-        </div>
-    <div class="col-md-6 offset-md-2 float-right">
-      {!! $content[1]->body !!}
+  <div class="row mt-3 d-flex justify-content-between">
+    <div class="col-lg-5 col-md-6">
+        <figure class="figure">
+          <img src="{!! asset('images/intimidatie1.jpg') !!}" class="figure-img img-fluid" alt="Jongen staat dichtbij meisje">
+          <figcaption class="figure-caption">Jongen staat dichtbij meisje</figcaption>
+        </figure>
+    </div>
+    <div class="col-lg-6 col-md-6 px-2 py-2">
+      <p>
+        {!! $content[1]->body !!}
+      </p>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <h2>Welke vormen zijn er</h2>
+  <div class="row mt-5 mb-3">
+    <div class="col px-2">
+      <h2>Welke vormen zijn er</h2>
+    </div>
   </div>
-  <div class="card-deck">
-    @php
-      $range = range(2,4);
-    @endphp
-    @foreach ($range as $num)
-      <div class="card shadow">
-        <div class="card-body">
-          <div class="card-title red">
-            <h3>{{ $content[$num]->title }}</h3>
+  <div class="row">
+    <div class="col px-2">
+      <div class="card-deck">
+        @php
+          $range = range(2,4);
+        @endphp
+        @foreach ($range as $num)
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="card-title red">
+                <h3>{{ $content[$num]->title }}</h3>
+              </div>
+              <div class="card-text">{!! $content[$num]->body !!}</div>
+            </div>
           </div>
-          <div class="card-text">{!! $content[$num]->body !!}</div>
-        </div>
+          <div class="w-100 d-none d-sm-block d-lg-none"><!-- wrap every 2 on sm--></div>
+        @endforeach
       </div>
-    @endforeach
+    </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="container">
-      <h2 class="float-right">{{ $content[5]->title }}</h2>
+  <div class="row mt-5">
+    <div class="col px-2">
+      <h2>{{ $content[5]->title }}</h2>
       {!! $content[5]->body !!}
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="container">
-      <h2 class="">{{ $content[6]->title }} </h2>
+  <div class="row mt-5">
+    <div class="col px-2">
+      <h2>{{ $content[6]->title }} </h2>
       {!! $content[6]->body !!}
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="container">
-      <h2 class="float-right">{{ $content[7]->title }}</h2>
+  <div class="row mt-5 mb-3">
+    <div class="col d-md-flex justify-content-end px-2">
+      <h2>{{ $content[7]->title }}</h2>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
-      <img class='img-fluid' src="{!! asset('images/intimidatie3.jpg') !!}" alt="Intimidatie">
+  <div class="row d-flex justify-content-between">
+    <div class="col-md-4 d-flex justify-content-center">
+      <figure class="figure">
+        <img src="{!! asset('images/intimidatie3.jpg') !!}" class="figure-img img-fluid" alt="Meisje wordt aangeraakt door vreemdeling">
+        <figcaption class="figure-caption">Mag de onbekende man deze vrouw aanraken?</figcaption>
+      </figure>
     </div>
-    <div class="col-md-6 offset-md-2 float-right">
+    <div class="col-md-6 px-2">
       {!! $content[7]->body !!}
     </div>
   </div>
-</div>
 
-<div class="container">
- <h2> {{ $content[8]->title }} </h2>
-  <div class="row d-flex justify-content-between">
-    <div class="col-md-4 ml-0 "> 
+  <div class="row d-flex justify-content-between mt-5 mb-3">
+    <div class="col ml-0 px-2"> 
+      <h2 class='mb-3'> {{ $content[8]->title }} </h2>
       {!! $content[8]->body !!}
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="container">
-      <h2 class="float-right">{{ $content[9]->title }} </h2>
+
+  <div class="row mt-5 mb-3">
+    <div class="col d-md-flex justify-content-end px-2">
+      <h2>{{ $content[9]->title }} </h2>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4 text-center mb-5">
-      <h4 class="text-center red">{{ $content[10]->title }}</h4>
-      <p class="text-center pt-5 ">{!! $content[10]->body !!}  </p>
+    <div class="col-md-4 text-md-center mb-5 px-2">
+      <h4 class="red">{{ $content[10]->title }}</h4>
+      <p class="pt-5 ">{!! $content[10]->body !!}  </p>
       <img src="{!! asset('images/statistiek12.png') !!}" class="img-fluid mb-3 " alt="">
     </div>
-    <div class="col-md-4 text-center mb-5 ">
-      <h4 class="text-center red ">{{ $content[11]->title }}</h4>
-      <p class="text-center pt-5 mb-5 ">{!! $content[11]->body !!}  </p>
+    <div class="col-md-4 text-md-center mb-5 px-2">
+      <h4 class="red ">{{ $content[11]->title }}</h4>
+      <p class="pt-5">{!! $content[11]->body !!}  </p>
       <h5>3 op de 10 meisjes</h5>
       @for ($i = 0; $i < 10; $i++)
         @if ($i < 3)
@@ -124,23 +132,19 @@
           <br>
       @endfor
     </div>
-    <div class="col-md-4 mb-5 ">
-      <h4 class="text-center red "> {{ $content[12]->title }}</h4>
-      <p class="text-center pt-5">{!! $content[12]->body !!} </p>
+    <div class="col-md-4 text-md-center mb-5 px-2">
+      <h4 class="red "> {{ $content[12]->title }}</h4>
+      <p class="pt-5">{!! $content[12]->body !!} </p>
       <img src="{!! asset('images/statistiek3-2.png') !!}" class="img-fluid pl-5 pr-5 mb-3 " alt="">
     </div>
   </div>
-</div>
-<div class="container">
   <div class="row">
-    <div class="container">
-      <h2 class=""> {{ $content[13]->title }} </h2>
+    <div class="col px-2">
+      <h2 class='mb-3'> {{ $content[13]->title }} </h2>
       {!! $content[13]->body !!}
       <a href="{!! route('contact.index') !!}" class="btn buttonBlue shadow link white mt-5"> Klik voor meer info </a>
     </div>
   </div>
-
-
 </div>
 
 
