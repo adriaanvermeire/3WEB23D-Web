@@ -13,13 +13,7 @@
     <span id="apptitle">
       @if(Request::is('/'))
       <h1 class='mt-5 ml-4'>{{ env('APP_NAME') }}</h1>
-      @elseif(Request::is('hoe-reageren*'))
-      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
-      @elseif(Request::is('waar-kan-je-terecht*'))
-      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
-      @elseif(Request::is('*-verhaal'))
-      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
-      @elseif(Request::is('wat-is-het'))
+      @else
       <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
       @endif
     </span>
