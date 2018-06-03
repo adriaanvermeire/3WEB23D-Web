@@ -19,18 +19,11 @@
 </div>
 <div class="container ">
   <div class="row">
-    <div class="col-md-4 float-left shadow " style="height: 40vh; background-color:grey;">
-      fotoke
-    </div>
+      <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
+          <img class='img-fluid' src="{!! asset('images/intimidatie1.jpg') !!}" alt="Intimidatie">
+        </div>
     <div class="col-md-6 offset-md-2 float-right">
       {!! $content[1]->body !!}
-    </div>
-  </div>
-</div>
-<div class="container ">
-  <div class="row">
-    <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
-      <img class='img-fluid' src="{!! asset('images/intimidatie1.jpg') !!}" alt="Intimidatie">
     </div>
   </div>
 </div>
@@ -77,8 +70,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4 float-left shadow" style="height: 40vh; background-color:grey;">
-      fotoke
+    <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
+      <img class='img-fluid' src="{!! asset('images/intimidatie3.jpg') !!}" alt="Intimidatie">
     </div>
     <div class="col-md-6 offset-md-2 float-right">
       {!! $content[7]->body !!}
@@ -89,16 +82,8 @@
 <div class="container">
  <h2> {{ $content[8]->title }} </h2>
   <div class="row d-flex justify-content-between">
-    <div class="col-md-4 ml-0 "> {!! $content[8]->body !!}
-    </div>
-    <div class="row">
-      <div class="col-md-4 float-left shadow p-0" style="height: 40vh; background-color:grey;">
-        <img class='img-fluid' src="{!! asset('images/intimidatie3.jpg') !!}" alt="Intimidatie">
-      </div>
-      <div class="col-md-6 offset-md-2 float-right">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident unde, voluptates corporis vitae delectus suscipit non
-              cumque eum, itaque cum neque corrupti ut molestiae aliquid optio doloremque sapiente in temporibus.
-      </div>
+    <div class="col-md-4 ml-0 "> 
+      {!! $content[8]->body !!}
     </div>
   </div>
 </div>
