@@ -2,7 +2,7 @@
   <span class="d-flex align-items-start align-self-start">
     <span class='d-flex flex-column align-items-center'>
       <a href="{!! route('home') !!}" class="navbar-brand m-0">
-        <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen"></a>
+        <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen" class="logoimga"></a>
       </a>
       @auth
       <ul class="navbar-nav align-self-stretch">
@@ -10,7 +10,19 @@
       </ul>
       @endauth
     </span>
-    <h1 class='mt-5 ml-4'>{{ env('APP_NAME') }}</h1>
+    <span id="apptitle">
+      @if(Request::is('/'))
+      <h1 class='mt-5 ml-4'>{{ env('APP_NAME') }}</h1>
+      @elseif(Request::is('hoe-reageren*'))
+      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
+      @elseif(Request::is('waar-kan-je-terecht*'))
+      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
+      @elseif(Request::is('*-verhaal'))
+      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
+      @elseif(Request::is('wat-is-het'))
+      <h1 class='mt-5 ml-4 apptitle'>{{ env('APP_NAME') }}</h1>
+      @endif
+    </span>
   </span>
   @if (!Request::is('/'))
 
