@@ -48,4 +48,127 @@
 
 Is de hulp niet dringend? Dan kan je De Blauwe Lijn bellen. Dit is 0800 123 12. Ook kan een online afspraak maken met de lokale politie bij het Blauwe Loket op <a href="https://www.politieantwerpen.be/e-loket">https://www.politieantwerpen.be/e-loket</a>.',
   ],
+
+
+
+  [ 'page' => 'what',
+  'section' => 0,
+  'title' => 'inleiding',
+  'body' => 'Wat betekent <span class="red"> <strong> seksuele intmidatie </strong> </span>? Welke vormen zijn er en welke zijn <strong>strafbaar</strong>?',
+  ],
+  [ 'page' => 'what',
+  'section' => 1,
+  'title' => 'definitie seksuele intimidatie',
+  'body' => '<span class="red">
+  <strong> Seksuele intimidatie </strong>
+</span> is een ongewenst gedrag op seksueel gebied. Het kan gaan om geweld met woorden, seksuele opmerkingen of intieme vragen
+over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
+',
+  ],
+  [ 'page' => 'what',
+  'section' => 2,
+  'title' => 'Verbaal',
+  'body' => '<ul><li>seksuele opmerkingen maken</li> <li>seksuele getinte sms&acute;jes of briefjes</li><li>intieme vragen stellen over iemands privéleven</li><li>voorstellen doen voor afspraakjes met de bedoeling daarbij seksueel contact te hebben</li></ul>',
+  ],
+
+  [ 'page' => 'what',
+  'section' => 3,
+  'title' => 'Non-verbaal',
+  'body' => ' <ul><li>iemand langdurig aanstaren</li><li>seksueel getinte afbeeldingen tonen (in de werkkamer of via internet of intranet)</li><li>seksueel gerichte gebaren maken</li></ul>',
+  ],
+  [ 'page' => 'what',
+  'section' => 4,
+  'title' => 'Fysiek',
+  'body' => ' <ul><li>vastpakken, arm om schouder leggen, knijpen </li><li>iemand (proberen te) zoenen</li><li>iemand de doorgang versperren</li><li>aanranding</li><li>verkrachting</li></ul>',
+  ],
+
+  [ 'page' => 'what',
+  'section' => 5,
+  'title' => 'Enkele voorbeelden van seksuele intimidatie',
+  'body' => '   <h4 class="red ">seksuele getinte opmerkingen</h4>
+  <h4 class="red mt-3">Ongepaste gebaren en geluiden</h4>
+  <h4 class="red mt-3">Opdringerig gedrag</h4>
+  <h4 class="red mt-3">Gluren of nafluiten</h4>
+  <h4 class="red mt-3">Ongevraagd in de billen knijpen of naar borsten grijpen</h4>
+  <h4 class="red mt-3">Uitschelden voor hoer, slet ...</h4>',
+  ],
+  [ 'page' => 'what',
+  'section' => 6,
+  'title' => 'Verschil tussen aanranding en verkrachting',
+  'body' => 'Bij verkrachting is er altijd sprake van penetratie. Onder aanranding vallen alle afgedwongen of opgedrongen seksuele handelingen
+  met lichamelijk contact maar zonder penetratie',
+  ],
+  [ 'page' => 'what',
+  'section' => 7,
+  'title' => 'Waar is de grens?',
+  'body' => ' <div class="row p-2">
+  <h4 class="red"> Ongewenst lichamelijk contact (aanranding) </h4>Bij jongeren onder de 16 jaar wordt seksueel contact gelijkgesteld
+  aan aanranding zelfs wanneer de jongere ermee instemt! Aanranding kan bestraft worden van 6 maanden gevangenisstraf
+  tot 5 jaar.
+</div>
+<div class="row mt-5 p-2">
+  <h4 class="red"> Belaging </h4> Alle gedrag dat de rust van de getroffen persoon ernstig verstoort zoals bijvoorbeeld achternalopen,
+  omringen, intimiderende of beledigende sms-en of berichten op facebook sturen enzovoort.
+</div>
+<div class="row mt-5 p-2">
+  <h4 class="red"> Gluren </h4> Personen observeren of doen observeren, maar ook beelden of geluidsopnamen van iemand maken, zonder
+  dat hij/zij dat weet of daarvoor toestemming heeft gegeven.
+</div>',
+  ],
+  [ 'page' => 'what',
+  'section' => 8,
+  'title' => 'Meisjes Én Jongens',
+  'body' => 'Meisjes zijn vaker het slachtoffer en jongens de plegers. Maar vergeet niet dat jongens ook het slachtoffer kunnen zijn.',
+  ],
+  [ 'page' => 'what',
+  'section' => 9,
+  'title' => 'Statistieken',
+  'body' => 'Meisjes zijn vaker het slachtoffer en jongens de plegers. Maar vergeet niet dat jongens ook het slachtoffer kunnen zijn.',
+  ],
+  [ 'page' => 'what',
+  'section' => 10,
+  'title' => 'Meldingen per dag',
+  'body' => 'Er zijn zo&acute;n ongeveer 30 meldingen per dag die gaan over seksuele intimidatie bij jongeren.',
+  ],
+  [ 'page' => 'what',
+  'section' => 11,
+  'title' => 'Hoeveel jongeren hebben al te maken gehad met seksuele intimidatie',
+  'body' => '',
+  ],
+  [ 'page' => 'what',
+  'section' => 12,
+  'title' => 'Kwetsbare leeftijd',
+  'body' => 'De meeste kwetsbare leeftijd is tussen de 10 en 13 jaar oud.',
+  ],
+
+
+  [ 'page' => 'what',
+  'section' => 13,
+  'title' => 'Waar kan je zoal terecht?',
+  'body' => ' <div class="row mt-5 ml-0">
+  <div class="col">
+    <h4 class="red">Praat erover </h4>
+    <p>
+      Spreek je partner, je ouders, of iemand uit je vrienden- of familiekring aan.</p>
+  </div>
+</div>
+
+
+<div class="row mt-5 ml-0">
+  <div class="col">
+    <h4 class="red">Hulplijn 1712 </h4>
+    <p>
+      Bij de hulplijn 1712 kan je terecht met vragen over (lichamelijk, psychisch of seksueel) geweld, misbruik en kindermishandeling.
+      Je wordt geholpen door hulpverleners van de centra voor algemeen welzijnswerk en de vertrouwenscentra kindermishandeling
+      . </p>
+  </div>
+</div>
+<div class="row mt-5 ml-0">
+  <div class="col">
+    <h4 class="red">Tele-Onthaal </h4>
+    <p>
+      Bij Tele-Onthaal kan je anoniem je verhaal kwijt als je het moeilijk hebt: op het nummer 106 of via chat.</p>
+  </div>
+</div>',
+  ],
 ];

@@ -12,6 +12,7 @@ class ContactController extends Controller
 
     public function index()
     {
+
       $content = Content::where('page', 'contact')->get();
 
       $data = [

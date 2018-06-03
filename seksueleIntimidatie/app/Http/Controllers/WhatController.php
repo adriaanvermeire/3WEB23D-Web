@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Content;
 
 class WhatController extends Controller
 {
@@ -11,7 +12,9 @@ class WhatController extends Controller
 
     public function index()
     {
+      $content = Content::where('page', 'what')->get();
       $data = [
+        'content' => $content,
         'title' => $this->title, 
         'color' => $this->color,
       ];
