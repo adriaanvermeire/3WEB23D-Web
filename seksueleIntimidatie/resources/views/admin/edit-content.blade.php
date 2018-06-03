@@ -32,7 +32,7 @@
             </label>
               <input name="title"  type="text" class="form-control shadow"
               id="title" aria-describedby="title" placeholder="Omschrijving van de content"
-              value="{{ old('title') or $content->title }}" required>
+              value="{{ $content->title or old('title') }}" required>
           </div>
           <div class="form-group">
             @if (!$errors->first('body'))
@@ -46,7 +46,7 @@
             </strong>
             @endif  
             </label>
-            <textarea id="summernote" name="body" class="form-control shadow" rows="10">{{ old('body') or $content->body }}</textarea>
+            <textarea id="summernote" name="body" class="form-control shadow" rows="10">{{ $content->body or old('body') }}</textarea>
           </div>
           <input type="hidden" name="id" value="{{ $content->id }}">
           <button type="submit" class="btn buttonGreen shadow">Sla content op</button>
