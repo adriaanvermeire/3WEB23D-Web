@@ -48,9 +48,6 @@
 
 Is de hulp niet dringend? Dan kan je De Blauwe Lijn bellen. Dit is 0800 123 12. Ook kan een online afspraak maken met de lokale politie bij het Blauwe Loket op <a href="https://www.politieantwerpen.be/e-loket">https://www.politieantwerpen.be/e-loket</a>.',
   ],
-
-
-
   [ 'page' => 'what',
   'section' => 0,
   'title' => 'inleiding',
@@ -101,19 +98,12 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   [ 'page' => 'what',
   'section' => 7,
   'title' => 'Waar is de grens?',
-  'body' => ' <div class="row p-2">
-  <h4 class="red"> Ongewenst lichamelijk contact (aanranding) </h4>Bij jongeren onder de 16 jaar wordt seksueel contact gelijkgesteld
-  aan aanranding zelfs wanneer de jongere ermee instemt! Aanranding kan bestraft worden van 6 maanden gevangenisstraf
-  tot 5 jaar.
-</div>
-<div class="row mt-5 p-2">
-  <h4 class="red"> Belaging </h4> Alle gedrag dat de rust van de getroffen persoon ernstig verstoort zoals bijvoorbeeld achternalopen,
-  omringen, intimiderende of beledigende sms-en of berichten op facebook sturen enzovoort.
-</div>
-<div class="row mt-5 p-2">
-  <h4 class="red"> Gluren </h4> Personen observeren of doen observeren, maar ook beelden of geluidsopnamen van iemand maken, zonder
-  dat hij/zij dat weet of daarvoor toestemming heeft gegeven.
-</div>',
+  'body' => '<h4 class="red ">seksuele getinte opmerkingen</h4>
+  <h4 class="red mt-3">Ongepaste gebaren en geluiden</h4>
+  <h4 class="red mt-3">Opdringerig gedrag</h4>
+  <h4 class="red mt-3">Gluren of nafluiten</h4>
+  <h4 class="red mt-3">Ongevraagd in de billen knijpen of naar borsten grijpen</h4>
+  <h4 class="red mt-3">Uitschelden voor hoer, slet ...</h4>',
   ],
   [ 'page' => 'what',
   'section' => 8,
@@ -146,29 +136,13 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   'section' => 13,
   'title' => 'Waar kan je zoal terecht?',
   'body' => ' <div class="row mt-5 ml-0">
-  <div class="col">
-    <h4 class="red">Praat erover </h4>
-    <p>
-      Spreek je partner, je ouders, of iemand uit je vrienden- of familiekring aan.</p>
-  </div>
-</div>
-
-
-<div class="row mt-5 ml-0">
-  <div class="col">
-    <h4 class="red">Hulplijn 1712 </h4>
-    <p>
-      Bij de hulplijn 1712 kan je terecht met vragen over (lichamelijk, psychisch of seksueel) geweld, misbruik en kindermishandeling.
-      Je wordt geholpen door hulpverleners van de centra voor algemeen welzijnswerk en de vertrouwenscentra kindermishandeling
-      . </p>
-  </div>
-</div>
-<div class="row mt-5 ml-0">
-  <div class="col">
-    <h4 class="red">Tele-Onthaal </h4>
-    <p>
-      Bij Tele-Onthaal kan je anoniem je verhaal kwijt als je het moeilijk hebt: op het nummer 106 of via chat.</p>
-  </div>
-</div>',
+  <h4 class="red">Praat erover </h4>
+  <p>Spreek je partner, je ouders, of iemand uit je vrienden- of familiekring aan.</p>
+  <h4 class="red">Hulplijn 1712 </h4>
+  <p>
+  Bij de hulplijn 1712 kan je terecht met vragen over (lichamelijk, psychisch of seksueel) geweld, misbruik en kindermishandeling.
+  Je wordt geholpen door hulpverleners van de centra voor algemeen welzijnswerk en de vertrouwenscentra kindermishandeling.</p>
+  <h4 class="red">Tele-Onthaal</h4>
+  <p>Bij Tele-Onthaal kan je anoniem je verhaal kwijt als je het moeilijk hebt: op het nummer 106 of via chat.</p>',
   ],
 ];
