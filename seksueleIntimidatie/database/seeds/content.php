@@ -68,26 +68,18 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   [ 'page' => 'what',
   'section' => 2,
   'title' => 'Verbaal',
-  'body' => '<li class="list-group-item">seksuele opmerkingen maken</li> <li class="list-group-item">seksuele getinte sms&acute;jes of briefjes</li>
-  <li class="list-group-item">intieme vragen stellen over iemands privéleven</li>
-  <li class="list-group-item">voorstellen doen voor afspraakjes met de bedoeling daarbij seksueel contact te hebben</li>',
+  'body' => '<ul><li>seksuele opmerkingen maken</li> <li>seksuele getinte sms&acute;jes of briefjes</li><li>intieme vragen stellen over iemands privéleven</li><li>voorstellen doen voor afspraakjes met de bedoeling daarbij seksueel contact te hebben</li></ul>',
   ],
-  
+
   [ 'page' => 'what',
   'section' => 3,
   'title' => 'Non-verbaal',
-  'body' => ' <li class="list-group-item">iemand langdurig aanstaren</li>
-  <li class="list-group-item">seksueel getinte afbeeldingen tonen (in de werkkamer of via internet of intranet)</li>
-  <li class="list-group-item">seksueel gerichte gebaren maken</li>',
+  'body' => ' <ul><li>iemand langdurig aanstaren</li><li>seksueel getinte afbeeldingen tonen (in de werkkamer of via internet of intranet)</li><li>seksueel gerichte gebaren maken</li></ul>',
   ],
   [ 'page' => 'what',
   'section' => 4,
   'title' => 'Fysiek',
-  'body' => ' <li class="list-group-item">vastpakken, arm om schouder leggen, knijpen </li>
-  <li class="list-group-item">iemand (proberen te) zoenen</li>
-  <li class="list-group-item">iemand de doorgang versperren</li>
-  <li class="list-group-item">aanranding</li>
-  <li class="list-group-item">verkrachting</li>',
+  'body' => ' <ul><li>vastpakken, arm om schouder leggen, knijpen </li><li>iemand (proberen te) zoenen</li><li>iemand de doorgang versperren</li><li>aanranding</li><li>verkrachting</li></ul>',
   ],
 
   [ 'page' => 'what',
@@ -149,7 +141,7 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   'body' => 'De meeste kwetsbare leeftijd is tussen de 10 en 13 jaar oud.',
   ],
 
-  
+
   [ 'page' => 'what',
   'section' => 13,
   'title' => 'Waar kan je zoal terecht?',
@@ -180,5 +172,3 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
 </div>',
   ],
 ];
-
-
