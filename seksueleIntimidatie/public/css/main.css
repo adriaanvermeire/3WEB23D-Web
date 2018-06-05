@@ -122,7 +122,6 @@ body.background-red {
 .card{
     border-radius: 0;
     background-color: #FFFFFF;
-    margin-top: 4vh;
 }
 
 
@@ -434,4 +433,9 @@ footer .contact-option .buttonRect {
 [data-original-title="Video"],
 [for="sn-checkbox-open-in-new-window"] {
   display: none;
+}
+
+.contentimg {
+  width: auto;
+  height: auto;
 }
