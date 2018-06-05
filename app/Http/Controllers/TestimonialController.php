@@ -68,7 +68,7 @@ class TestimonialController extends Controller
     $test->published = true;
     $test->save();
     
-    // TODO: send notification to admin panel
+    $request->session()->flash('success', 'Het verhaal werd succesvol gepubliceerd!');      
     // TODO: send email to sender
     return redirect()->route('admin.index');
   }
@@ -79,7 +79,7 @@ class TestimonialController extends Controller
     $test->published = false;
     $test->save();
 
-    // TODO: send notification to admin panel
+    $request->session()->flash('success', 'Het verhaal werd succesvol weerhouden.');      
     return redirect()->route('admin.index');
   }
 
@@ -94,8 +94,10 @@ class TestimonialController extends Controller
       $new = Testimonial::findOrFail($id);
       $new->highlight = true;
       $new->save();
+      $request->session()->flash('success', 'Het verhaal werd succesvol gehighlight!');      
+    } else {
+      $request->session()->flash('success', 'De highlight werd van het verhaal gehaald.');            
     }
-    // TODO: send notification to admin panel
     return redirect()->route('admin.testimonials');
   }
 

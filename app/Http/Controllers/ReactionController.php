@@ -24,7 +24,6 @@ class ReactionController extends Controller
 
     public function create()
     {
-
       return view('reaction.createEdit', ['title' => $this->title]);
     }
 
@@ -47,7 +46,12 @@ class ReactionController extends Controller
       $scenario->good = $request->good;
       $scenario->bad = $request->bad;
       $scenario->save();
-
+      
+      if(isset($request->id)){
+        $request->session()->flash('success', 'Het scenario werd succesvol aangepast!');              
+      }else{
+        $request->session()->flash('success', 'Het scenario werd succesvol aangemaakt!');      
+      }
       return redirect()->route('admin.index');
     }
 
@@ -56,7 +60,7 @@ class ReactionController extends Controller
       $toDelete = HowScenario::findOrFail($id);
       $toDelete->delete();
 
-      // TODO: return message that it's deleted
+      $request->session()->flash('success', 'Het scenario werd succesvol verwijderd!');      
       return redirect()->route('admin.index');
     }
 }
