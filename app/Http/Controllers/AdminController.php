@@ -15,7 +15,7 @@ class AdminController extends Controller
     
     function index()
     {
-      $unseen = Testimonial::whereRaw('created_at == updated_at')->get();
+      $unseen = Testimonial::whereRaw('created_at = updated_at')->get();
       $seen = Testimonial::whereRaw('created_at != updated_at')->get();
       $scenarios = HowScenario::all();
       $contactSections = Content::where('page', 'contact')->get();
