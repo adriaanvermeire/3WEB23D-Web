@@ -44,11 +44,11 @@
       </div>
       <div class="row shadow bg-white ">
 
-
-        <ul class="list-group ">
-          
-          {!! $content[2]->body !!}
-        </ul>
+  
+        {!! $content[2]->body !!}
+       
+        
+       
 
       </div>
     </div>
