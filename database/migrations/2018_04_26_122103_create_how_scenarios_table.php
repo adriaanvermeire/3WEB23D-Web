@@ -15,7 +15,7 @@ class CreateHowScenariosTable extends Migration
     {
         Schema::create('how_scenarios', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name')->unique();
+            $table->text('name');
             $table->text('good')->nullable();
             $table->text('bad')->nullable();
             $table->timestamps();
