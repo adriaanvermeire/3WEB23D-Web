@@ -11,28 +11,28 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
 
-Route::group(['prefix' => 'wat-is-het', 'as' => 'what.'], function(){
+Route::group(['prefix' => 'wat-is-het', 'as' => 'what.', 'middleware' => 'auth'], function(){
   Route::get('/', 'WhatController@index')->name('index');
   Route::get('/{section}', 'WhatController@showSection')->name('section');
 });
 
-Route::group(['prefix' => 'hoe-reageren', 'as' => 'reaction.'], function(){
+Route::group(['prefix' => 'hoe-reageren', 'as' => 'reaction.', 'middleware' => 'auth'], function(){
   Route::get('/', 'ReactionController@index')->name('index');
 });
 
-Route::group(['prefix' => 'hun-verhaal', 'as' => 'testimonials.'], function(){
+Route::group(['prefix' => 'hun-verhaal', 'as' => 'testimonials.', 'middleware' => 'auth'], function(){
   Route::get('/', 'TestimonialController@index')->name('index');
   Route::get('/{id}', 'TestimonialController@show')->name('show');
 });
 
-Route::group(['prefix' => 'mijn-verhaal', 'as' => 'testimonials.'], function(){
+Route::group(['prefix' => 'mijn-verhaal', 'as' => 'testimonials.', 'middleware' => 'auth'], function(){
   Route::get('/', 'TestimonialController@create')->name('create');
   Route::post('/', 'TestimonialController@post')->name('post');
 });
 
-Route::group(['prefix' => 'waar-kan-je-terecht', 'as' => 'contact.'], function(){
+Route::group(['prefix' => 'waar-kan-je-terecht', 'as' => 'contact.', 'middleware' => 'auth'], function(){
   Route::get('/', 'ContactController@index')->name('index');
 });
 
