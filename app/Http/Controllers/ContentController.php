@@ -26,7 +26,7 @@ class ContentController extends Controller
       $content->body = Purify::clean($request->body);
       $content->save();
 
-      $request->session()->flash('success', 'De content werd succesvol aangepast!');
-      return redirect()->route('admin.index');
+      $message = 'De content werd succesvol aangepast!';
+      return redirect()->route('admin.index')->with('status', $message);
     }
 }

@@ -48,11 +48,11 @@ class ReactionController extends Controller
       $scenario->save();
       
       if(isset($request->id)){
-        $request->session()->flash('success', 'Het scenario werd succesvol aangepast!');              
+        $message = 'Het scenario werd succesvol aangepast!';              
       }else{
-        $request->session()->flash('success', 'Het scenario werd succesvol aangemaakt!');      
+        $message = 'Het scenario werd succesvol aangemaakt!';      
       }
-      return redirect()->route('admin.index');
+      return redirect()->route('admin.index')->with('status', $message);
     }
 
     public function delete($id)
@@ -60,7 +60,7 @@ class ReactionController extends Controller
       $toDelete = HowScenario::findOrFail($id);
       $toDelete->delete();
 
-      $request->session()->flash('success', 'Het scenario werd succesvol verwijderd!');      
-      return redirect()->route('admin.index');
+      $message = 'Het scenario werd succesvol verwijderd!';      
+      return redirect()->route('admin.index')->with('status', $message);
     }
 }
