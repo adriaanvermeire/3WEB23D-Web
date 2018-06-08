@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div class="card-deck mt-4">
+  <div class="card-deck mt-5">
     <div class="card shadow">
       <div class="card-img-top card-image">
         <img class='img-fluid h-100' src="{!! asset('images/jac.png') !!}" alt="Jac">
@@ -63,7 +63,7 @@
       </div>
     </div>
   </div>
-  <div class="card-deck">
+  <div class="card-deck mt-5">
     <div class="card shadow carditem">
       <div class="card-img-top card-image">
         <img class='img-fluid h-100' src="{!! asset('images/nupraatikerover.jpg') !!}" alt="Nu praat ik erover">
