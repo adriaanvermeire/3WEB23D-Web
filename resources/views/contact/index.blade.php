@@ -1,5 +1,5 @@
 @extends('layouts.master') @section('title', $title) @section('content')
-<div class="container mt-5">
+<div class="container mt-3">
   <h1 class="text-center red">Waar kan je terecht?</h1>
 </div>
 <div class="container mt-5">

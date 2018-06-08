@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('content')
-<div class="container mt-5">
+<div class="container mt-3">
   <div class="row">
     <div class="col justify-content-center d-flex px-2">
       <h1 class="red">Wat is intimidatie nu eigenlijk?</h1>
