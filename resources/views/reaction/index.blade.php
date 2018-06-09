@@ -50,11 +50,7 @@
   @endif
   <div class="container wat p-5">
     <h1 class="text-center red">Speel ons spel en test je kennis!</h1>
-
-    <div class="container bggrey p-5 pointer">
-      <div class="text-center p-5">
-        <i class="fas fa-gamepad"></i>
-      </div>
+    <div #id='game' class="container bggrey p-5 pointer">
       <div class="webgl-content"  >
         <div id="gameContainer"  ></div>
         <div class="footer">
@@ -64,18 +60,14 @@
         </div>
       </div>
     </div>
-
-    
   </div>
 
   @push('scripts')
   <script>
-   
-/* 
-    $( ".webgl-content" ).click(function() {
-      gameInstance.SetFullscreen(1);
-      alert('geklikt');
-});*/
+    // $( ".webgl-content" ).click(function() {
+    //   gameInstance.SetFullscreen(1);
+    //   alert('geklikt');
+    // });
   </script>
   @endpush
 @endsection
