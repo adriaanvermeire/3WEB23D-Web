@@ -34,8 +34,23 @@
   @endif
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" charset="utf-8"></script>
-
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script>
+    $('document').ready(function(){
+      if($('.top-alert')){
+        var alert = $('.top-alert');
+        function removeAlert(){
+            alert.alert('close');
+        }
+        setTimeout(removeAlert, 3300);
+      }
+    });
+  </script>
   @stack('scripts')
+  @if(session('status'))
+    @component('components.alert')
+      {{ session('status') }}
+    @endcomponent
+  @endif
 </body>
 </html>
