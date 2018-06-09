@@ -32,7 +32,7 @@
             </li>
             @auth
             <li>
-              <a href="{!! route('admin.index') !!}" title="Leer uit verhalen van anderen">
+              <a href="{!! route('admin.index') !!}" title="Ga naar het admin gedeelte">
                 Admin<span class="fa fa-chevron-right"></span>
               </a>
             </li>
