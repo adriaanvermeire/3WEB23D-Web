@@ -1,4 +1,5 @@
 <header class="navbar justify-content-sm-between justify-content-end align-items-start flex-md-nowrap">
+  <div class='d-flex flex-shrink-2'>
   <span id='logo-admin' class='d-sm-flex d-none flex-column align-items-center order-0 flex-shrink-2'>
       <a href="{!! route('home') !!}" class="navbar-brand m-0">
         <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen" class="img-fluid logoimga"></a>
@@ -9,7 +10,9 @@
       </ul>
       @endauth
   </span>  
-  <h1 class='mt-2 mt-sm-3 mt-md-5 ml-2 apptitle order-2 order-md-1'>{{ env('APP_NAME') }}</h1>
+  <h1 class='d-none d-md-block mt-2 mt-sm-3 mt-md-5 ml-2 apptitle order-2 order-md-1'>{{ env('APP_NAME') }}</h1>
+  </div>
+  <h1 class='d-md-none mt-2 mt-sm-3 mt-md-5 ml-2 apptitle order-2 order-md-1'>{{ env('APP_NAME') }}</h1>
   <span id="circlenav" class='order-1 order-md-2'>
     @if(Request::is('wat-is-het'))
     <object data="{!! asset('images/WATNAV.svg') !!}" type="image/svg+xml"></object>
