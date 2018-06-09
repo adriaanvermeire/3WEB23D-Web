@@ -98,12 +98,18 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   [ 'page' => 'what',
   'section' => 7,
   'title' => 'Waar is de grens?',
-  'body' => '<h4 class="red ">seksuele getinte opmerkingen</h4>
-  <h4 class="red mt-3">Ongepaste gebaren en geluiden</h4>
-  <h4 class="red mt-3">Opdringerig gedrag</h4>
-  <h4 class="red mt-3">Gluren of nafluiten</h4>
-  <h4 class="red mt-3">Ongevraagd in de billen knijpen of naar borsten grijpen</h4>
-  <h4 class="red mt-3">Uitschelden voor hoer, slet ...</h4>',
+  'body' => '<h4 class="red"> 
+  <p>Ongewenst lichamelijk contact (aanranding) </h4>Bij jongeren onder de 16 jaar wordt seksueel contact gelijkgesteld
+    aan aanranding zelfs wanneer de jongere ermee instemt! Aanranding kan bestraft worden van 6 maanden gevangenisstraf
+    tot 5 jaar.
+  </p>
+    <h4 class="red"> Belaging </h4> 
+    <p>Alle gedrag dat de rust van de getroffen persoon ernstig verstoort zoals bijvoorbeeld achternalopen,
+    omringen, intimiderende of beledigende sms-en of berichten op facebook sturen enzovoort.
+    </p>
+    <h4 class="red"> Gluren </h4> 
+    <p>Personen observeren of doen observeren, maar ook beelden of geluidsopnamen van iemand maken, zonder
+    dat hij/zij dat weet of daarvoor toestemming heeft gegeven.</p>',
   ],
   [ 'page' => 'what',
   'section' => 8,
@@ -130,12 +136,10 @@ over jou privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   'title' => 'Kwetsbare leeftijd',
   'body' => 'De meeste kwetsbare leeftijd is tussen de 10 en 13 jaar oud.',
   ],
-
-
   [ 'page' => 'what',
   'section' => 13,
   'title' => 'Waar kan je zoal terecht?',
-  'body' => ' <div class="row mt-5 ml-0">
+  'body' => '
   <h4 class="red">Praat erover </h4>
   <p>Spreek je partner, je ouders, of iemand uit je vrienden- of familiekring aan.</p>
   <h4 class="red">Hulplijn 1712 </h4>
