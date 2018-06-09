@@ -1,4 +1,4 @@
-<header class="navbar justify-content-start align-items-start">
+<header class="navbar justify-content-start align-items-start flex-nowrap">
   <span id='logo-admin' class='d-flex flex-column align-items-center'>
     <a href="{!! route('home') !!}" class="navbar-brand m-0">
       <img src="{!! asset('images/logo_antwerpen.png') !!}" alt="Antwerpen" class="logoimga"></a>
@@ -9,5 +9,5 @@
     </ul>
     @endauth
   </span>
-  <h1 class='mt-5 ml-4'>{{ env('APP_NAME') }}</h1>
+  <h1 class='mt-2 mt-sm-3 mt-md-5 ml-2'>{{ env('APP_NAME') }}</h1>
 </header>
