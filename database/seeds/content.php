@@ -4,7 +4,7 @@
   [ 'page' => 'contact',
     'section' => 0,
     'title' => 'Praat erover',
-    'body' => 'Allereerst kan je erover praten met de CLB dienst van je school. Deze mensen zullen je graag verder helpen. Anderzijds kan je ook terecht bij je zorgleerkracht op school. Deze persoon gaat er alles aan doen om je terug op je gemak te stellen. Als laatste, en zeker daarom niet de minst beste oplossing, is praten met je ouders. Die zullen dan de juiste personen aanspreken in jouw plaats.',
+    'body' => 'Allereerst kan je erover praten met de CLB dienst van je school. Deze mensen zullen je graag verder helpen. Anderzijds kan je ook terecht bij je zorgleerkracht op school. Deze persoon gaat er alles aan doen om je terug op je gemak te stellen. Als laatste, en daarom zeker niet de minst goede oplossing, is praten met je ouders. Zij zullen dan de juiste personen aanspreken in jouw plaats.',
   ],
   [ 'page' => 'contact',
     'section' => 1,
@@ -44,9 +44,9 @@
   [ 'page' => 'contact',
     'section' => 8,
     'title' => 'Aangifte doen',
-    'body' => 'Heb je er met iemand over gepraat en is het duidelijk geworden dat de feiten strafbaar zijn of dat er dringende politiehulp nodig is, dan kan je terecht op het noodnummer van de politie. Dit is 101.
+    'body' => '<p>Heb je er met iemand over gepraat en is het duidelijk geworden dat de feiten strafbaar zijn of dat er dringende politiehulp nodig is, dan kan je terecht op het noodnummer van de politie. Dit is <strong>101</strong>.</p>
 
-Is de hulp niet dringend? Dan kan je De Blauwe Lijn bellen. Dit is 0800 123 12. Ook kan een online afspraak maken met de lokale politie bij het Blauwe Loket op <a href="https://www.politieantwerpen.be/e-loket">https://www.politieantwerpen.be/e-loket</a>.',
+<p>Is de hulp niet dringend? Dan kan je De Blauwe Lijn bellen. Dit is <strong>0800 123 12</strong>. Ook kan je een online afspraak maken met de lokale politie bij het Blauwe Loket op <a href="https://www.politieantwerpen.be/e-loket">https://www.politieantwerpen.be/e-loket</a>.</p>',
   ],
   [ 'page' => 'what',
   'section' => 0,
