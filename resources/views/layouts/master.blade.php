@@ -21,7 +21,11 @@
   $bg = 'background-' . $color;
 @endphp
 <body class='{{ $bg }}' id='body'>
+@if(Request::is('/'))
+  @include('components.homeHeader')
+@else 
   @include('components.header')
+@endif
   <main>
     @yield('content')
   </main>
