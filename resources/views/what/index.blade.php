@@ -105,25 +105,27 @@
       <p class="">{!! $content[11]->body !!}  </p>
       <h5>3 op de 10 meisjes</h5>
       @for ($i = 0; $i < 10; $i++)
+
         @if ($i < 3)
-          <i class="fas fa-female red"></i>
+        <i class="fas fa-female red"></i>
         @else
-          <i class="fas fa-female"></i>
+        <i class="fas fa-female"></i>
         @endif
-      @endfor
+        @endfor
         <br>
         <br>
         <h5>3 op de 100 jongens</h5>
-      @for ($i = 0; $i < 5; $i++)
+        @for ($i = 0; $i < 5; $i++)
         @for ($y=0 ; $y < 20; $y++)
-          @if ($i==0 && $y < 3 )
-            <i class="fas fa-male red"></i>
-          @else
-            <i class="fas fa-male"></i>
-          @endif
+        @if ($i==0 && $y < 3 )
+        <i class="fas fa-male red"></i>
+        @else
+        <i class="fas fa-male"></i>
+        @endif
         @endfor
-          <br>
-      @endfor
+        <br>
+        @endfor
+      </div>
     </div>
     <div class="col-md-4 text-md-center mb-5 px-2">
       <h4 class="red "> {{ $content[12]->title }}</h4>

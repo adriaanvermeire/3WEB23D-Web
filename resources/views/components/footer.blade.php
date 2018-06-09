@@ -30,6 +30,13 @@
                 Hun verhalen<span class="fa fa-chevron-right"></span>
               </a>
             </li>
+            @auth
+            <li>
+              <a href="{!! route('admin.index') !!}" title="Ga naar het admin gedeelte">
+                Admin<span class="fa fa-chevron-right"></span>
+              </a>
+            </li>
+            @endauth
         </ul>
       </div>
       <div class="col-sm offset-md-4">

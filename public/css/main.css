@@ -435,41 +435,23 @@ footer .contact-option .buttonRect {
   display: none;
 }
 
-@media (max-width: 575.98px) {
-  .logoimga {
-    display: none;
-  }
-  .apptitle {
-    display: none;
-  }
+/* alerts */
+.top-alert{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100%;
+  z-index: 4;
+  text-align: center;
+  overflow: hidden; 
+}
+  
+@keyframes slideDown {
+0%, 100% { transform: translateY(-100%); }
+10%, 90% { transform: translateY(0px); }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .apptitle {
-    display: none;
-  }
-  .carditem {
-    
-  }
+.slide {
+transform: translateY(-50px);
+animation: slideDown 2.5s 1.0s 1 ease forwards;
 }
-
- /* alerts */
- .top-alert{
-   position: absolute;
-   top:0;
-   right: 0;
-   width: 100%;
-   z-index: 4;
-   text-align: center;
-   overflow: hidden; 
- }
-
- @keyframes slideDown {
-  0%, 100% { transform: translateY(-50px); }
-  10%, 90% { transform: translateY(0px); }
- }
-
- .slide {
-  transform: translateY(-50px);
-  animation: slideDown 2.5s 1.0s 1 ease forwards;
- }
