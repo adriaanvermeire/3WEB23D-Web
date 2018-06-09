@@ -55,7 +55,27 @@
       <div class="text-center p-5">
         <i class="fas fa-gamepad"></i>
       </div>
-
+      <div class="webgl-content"  >
+        <div id="gameContainer"  ></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+          <div class="title">3WEB23D</div>
+        </div>
+      </div>
     </div>
+
+    
   </div>
+
+  @push('scripts')
+  <script>
+   
+/* 
+    $( ".webgl-content" ).click(function() {
+      gameInstance.SetFullscreen(1);
+      alert('geklikt');
+});*/
+  </script>
+  @endpush
 @endsection
