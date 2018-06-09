@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('content')
-<div class="container mt-5">
+<div class="container mt-3">
   <div class="row">
     <div class="col justify-content-center d-flex px-2">
       <h1 class="red">Wat is intimidatie nu eigenlijk?</h1>
@@ -35,11 +35,11 @@
       </p>
     </div>
   </div>
-  <div class="row mt-5 mb-3">
+  <div class="row mt-5 mb-5">
     <div class="col px-2">
-      <h2>Welke vormen zijn er</h2>
+      <h2 class="mb-3">Welke vormen zijn er</h2>
     </div>
-  </div>
+  
   <div class="row">
     <div class="col px-2">
       <div class="card-deck">
@@ -60,18 +60,14 @@
       </div>
     </div>
   </div>
+  </div>
   <div class="row mt-5">
-    <div class="col px-2">
+    <div class="col px-2 mt-2">
       <h2>{{ $content[5]->title }}</h2>
       {!! $content[5]->body !!}
     </div>
   </div>
-  <div class="row mt-5">
-    <div class="col px-2">
-      <h2>{{ $content[6]->title }} </h2>
-      {!! $content[6]->body !!}
-    </div>
-  </div>
+
   <div class="row mt-5 mb-3">
     <div class="col d-md-flex justify-content-end px-2">
       <h2>{{ $content[7]->title }}</h2>
@@ -89,12 +85,7 @@
     </div>
   </div>
 
-  <div class="row d-flex justify-content-between mt-5 mb-3">
-    <div class="col ml-0 px-2"> 
-      <h2 class='mb-3'> {{ $content[8]->title }} </h2>
-      {!! $content[8]->body !!}
-    </div>
-  </div>
+
 
   <div class="row mt-5 mb-3">
     <div class="col d-md-flex justify-content-end px-2">
@@ -104,15 +95,17 @@
   <div class="row">
     <div class="col-md-4 text-md-center mb-5 px-2">
       <h4 class="red">{{ $content[10]->title }}</h4>
-      <p class="pt-5 ">{!! $content[10]->body !!}  </p>
+      <br>
+      <p class="">{!! $content[10]->body !!}  </p>
       <img src="{!! asset('images/statistiek12.png') !!}" class="img-fluid mb-3 " alt="">
     </div>
     <div class="col-md-4 text-md-center mb-5 px-2">
       <h4 class="red ">{{ $content[11]->title }}</h4>
-      <p class="pt-4">{!! $content[11]->body !!}  </p>
-      <div class="graphic">
-        <h5>3 op de 10 meisjes</h5>
-        @for ($i = 0; $i < 10; $i++)
+      <br>
+      <p class="">{!! $content[11]->body !!}  </p>
+      <h5>3 op de 10 meisjes</h5>
+      @for ($i = 0; $i < 10; $i++)
+
         @if ($i < 3)
         <i class="fas fa-female red"></i>
         @else
@@ -136,8 +129,17 @@
     </div>
     <div class="col-md-4 text-md-center mb-5 px-2">
       <h4 class="red "> {{ $content[12]->title }}</h4>
-      <p class="pt-5">{!! $content[12]->body !!} </p>
+      <br>
+      <p class="">{!! $content[12]->body !!} </p>
       <img src="{!! asset('images/statistiek3-2.png') !!}" class="img-fluid pl-5 pr-5 mb-3 " alt="">
+    </div>
+  </div>
+
+
+  <div class="row d-flex justify-content-between mt-5 mb-3">
+    <div class="col ml-0 px-2"> 
+      <h2 class='mb-3'> {{ $content[8]->title }} </h2>
+      {!! $content[8]->body !!}
     </div>
   </div>
   <div class="row">

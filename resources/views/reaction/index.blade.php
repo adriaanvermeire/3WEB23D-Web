@@ -4,7 +4,7 @@
 
 @section('content')
   @if (count($scenarios) > 0)
-  <div class="container mt-5">
+  <div class="container mt-3">
     <h1 class="text-center red">Hoe moet je reageren bij volgende situaties</h1>
   </div>
   <div class="container">
