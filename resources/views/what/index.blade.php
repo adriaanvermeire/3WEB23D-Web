@@ -141,7 +141,7 @@
   </div>
 </div>
 
-  <div class="row d-flex justify-content-between mb-5">
+  <div class="row d-flex justify-content-between mb-5 test">
     <div class="col ml-0 px-2"> 
       <h2 class='mb-3'> {{ $content[8]->title }} </h2>
       {!! $content[8]->body !!}
