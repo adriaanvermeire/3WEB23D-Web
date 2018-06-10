@@ -137,7 +137,7 @@ over jouw privéleven, maar ook als iemand je ongewenst opzettelijk aanraakt.
   [ 'page' => 'what',
   'section' => 12,
   'title' => 'Kwetsbare leeftijd',
-  'body' => '<p class="pt-5">De leeftijd die het meeste kans heeft om met seksuele intimidatie in contact te komen is tussen de <b>10</b> en <b>13</b> jaar oud. </p>',
+  'body' => 'De leeftijd die het meeste kans heeft om met seksuele intimidatie in contact te komen is tussen de <b>10</b> en <b>13</b> jaar oud.',
   ],
   [ 'page' => 'what',
   'section' => 13,
