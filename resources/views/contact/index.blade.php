@@ -4,7 +4,7 @@
 </div>
 <div class="container mt-5">
   <h2 class="text-center black">{{ $content[0]->title }}</h2>
-  <div class="card shadow mt-5 mt-3">
+  <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
         <p>{!! $content[0]->body !!}</p>
@@ -14,7 +14,7 @@
 </div>
 <div class="container mt-5">
   <h2 class="text-center black">{{ $content[1]->title }}</h2>
-  <div class="card shadow mt-5 mt-3">
+  <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
         <p>{!! $content[1]->body !!}</p>
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="card-deck mt-5">
-    <div class="card shadow mt-5 mt-3">
+    <div class="card shadow">
       <div class="card-img-top card-image">
         <img class='img-fluid h-100' src="{!! asset('images/jac.png') !!}" alt="Jac">
       </div>
@@ -36,7 +36,7 @@
         <a href="http://www.jac.be/chat" target="_blank">Ga naar de chat</a>
       </div>
     </div>
-    <div class="card shadow mt-5 mt-3">
+    <div class="card shadow">
       <div class="card-img-top card-image">
         <img class='img-fluid h-100' src="{!! asset('images/awel.png') !!}" alt="Awel">
       </div>
@@ -50,7 +50,7 @@
         <a href="http://www.awel.be/chat" target="_blank">Ga naar de chat</a>
       </div>
     </div>
-    <div class="card shadow mt-5 mt-3">
+    <div class="card shadow">
       <div class="card-img-top card-image"><img class='img-fluid h-100' src="{!! asset('images/tele-onthaal.png') !!}" alt="Tele-onthaal"></div>
       <div class="card-body">
         <div class="card-title">
@@ -63,8 +63,8 @@
       </div>
     </div>
   </div>
-  <div class="card-deck">
-    <div class="card shadow mt-5 mt-3 carditem">
+  <div class="card-deck mt-5">
+    <div class="card shadow carditem">
       <div class="card-img-top card-image">
         <img class='img-fluid h-100' src="{!! asset('images/nupraatikerover.jpg') !!}" alt="Nu praat ik erover">
       </div>
@@ -78,7 +78,7 @@
         <a href="http://www.nupraatikerover.be/" target="_blank">Ga naar de chat</a>
       </div>
     </div>
-    <div class="card shadow mt-5 mt-3">
+    <div class="card shadow">
       <div class="card-img-top card-image">
         <img class='img-fluid' src="{!! asset('images/clbchat.png') !!}" alt="CLB Chat">
       </div>
@@ -92,7 +92,7 @@
         <a href="https://www.clbchat.be/" target="_blank">Ga naar de chat</a>
       </div>
     </div>
-    <div class="card shadow mt-5">
+    <div class="card shadow">
       <div class="card-img-top card-image">
         <img class='img-fluid h-100' src="{!! asset('images/1712.jpg') !!}" alt="Jac">
       </div>
@@ -110,7 +110,7 @@
 </div>
 <div class="container mt-5">
   <h2 class="text-center black">{{ $content[8]->title }}</h2>
-  <div class="card shadow mt-5 mt-3">
+  <div class="card shadow">
     <div class="card-body">
       <div class="card-text">
         {!! $content[8]->body !!}
