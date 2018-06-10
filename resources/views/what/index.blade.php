@@ -94,15 +94,15 @@
   
   <div class="row ml-0 mr-0 ">
     <div class="col-md-4 text-md-center mb-5 px-2">
-      <h4 class="red">{{ $content[10]->title }}</h4>
+      <h4 class="red text-center">{{ $content[10]->title }}</h4>
       <br>
-      <p class="">{!! $content[10]->body !!}  </p>
+      <p class="text-center">{!! $content[10]->body !!}  </p>
       <img src="{!! asset('images/statistiek12.png') !!}" class="img-fluid mb-3 " alt="">
     </div>
     <div class="col-md-4 text-md-center mb-5 px-2 ">
-      <h4 class="red ">{{ $content[11]->title }}</h4>
+      <h4 class="red text-center">{{ $content[11]->title }}</h4>
       <br>
-      <p >{!! $content[11]->body !!}  </p>
+      <p class="text-center" >{!! $content[11]->body !!}  </p>
       <h5 class="text-center">3 op de 10 meisjes</h5>
       <div class="text-center">
       @for ($i = 0; $i < 10; $i++)
@@ -131,9 +131,9 @@
       </div>
       </div>
       <div class="col-md-4 text-md-center  px-2">
-        <h4 class="red "> {{ $content[12]->title }}</h4>
+        <h4 class="red text-center "> {{ $content[12]->title }}</h4
         <br>
-        <p class="">{!! $content[12]->body !!} </p>
+        <p class="text-center">{!! $content[12]->body !!} </p>
         <img src="{!! asset('images/statistiek3-2.png') !!}" class="img-fluid pl-5 pr-5 mb-3 " alt="">
       </div>
   
