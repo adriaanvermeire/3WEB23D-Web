@@ -7,7 +7,7 @@
   <div class="container mt-3">
     <h1 class="text-center red">Hoe moet je reageren bij volgende situaties</h1>
   </div>
-  <div class="container">
+  <div class="container mb-5">
     <h4>Hieronder vind je enkele situaties waarbij je een goede en slechte reactie ziet.</h4>
   </div>
 
@@ -26,11 +26,11 @@
         </a>
         <div id="scenario-{{$scenario->id}}" class="collapse">
           <div class="card-block p-3">
-            <div class="row p-2">
+            <div class="row p-2 mb-3">
               <div class="col-2 offset-sm-1">
                 <i class="fas fa-plus-circle"></i>
               </div>
-              <div class="col-6 good">
+              <div class="col-8 good ml-3 ">
                 {{ $scenario->good }}
               </div>
               </div>
@@ -38,7 +38,7 @@
                 <div class="col-2 offset-sm-1">
                   <i class="fas fa-minus-circle"></i>
                 </div>
-                <div class="col-6 bad">
+                <div class="col-8 good ml-3">
                   {{ $scenario->bad }}
                 </div>
               </div>
