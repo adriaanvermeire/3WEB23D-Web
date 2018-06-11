@@ -437,9 +437,9 @@ footer .contact-option .buttonRect {
 
 /* alerts */
 .top-alert{
-  position: absolute;
+  /* position: absolute;
   top:0;
-  right: 0;
+  right: 0; */
   width: 100%;
   z-index: 4;
   text-align: center;
