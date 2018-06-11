@@ -11,14 +11,19 @@
     @slot('body')
       @if (count($unseen) > 0 || count($seen) > 0)
         <table class='table'>
-          <th></th>
-          <th></th>
-          <th>Titel</th>
-          <th>Content</th>
-          <th>Gepost op</th>
-          <th></th>
-        @if (isset($unseen))
-          @foreach ($unseen as $testimonial)
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>Titel</th>
+              <th>Content</th>
+              <th>Gepost op</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            @if (isset($unseen))
+            @foreach ($unseen as $testimonial)
             <tr>
               <td title='Dit verhaal moet nagekeken worden.'><i class="fas fa-exclamation-circle red"></i></td>
               <td>
@@ -27,18 +32,18 @@
               <td>@truncate($testimonial->title, 50)</td>
               @php
                 $body = strip_tags($testimonial->body);
-              @endphp
+                @endphp
               <td>@truncate($body, 50)</td>
               <td><date>{{ $testimonial->created_at }}</date></td>
               <td class='d-flex justify-content-end'>
                 <div class="btn-group">
-                  <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Goed</a>
-                  <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Slecht</a>
+                  <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Publiceren</a>
+                  <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Weerhouden</a>
                 </div>
               </td>
             </tr>
-          @endforeach
-          @foreach ($seen as $testimonial)
+            @endforeach
+            @foreach ($seen as $testimonial)
             <tr>
               @if (!$testimonial->highlight && $testimonial->published)
               <td>
@@ -57,18 +62,19 @@
               <td>@truncate($testimonial->title, 50)</td>
               @php
                 $body = strip_tags($testimonial->body);
-              @endphp
+                @endphp
               <td>@truncate($body, 50)</td>
               <td><date>{{ $testimonial->created_at }}</date></td>
               <td class='d-flex justify-content-end'>
                 @if ($testimonial->published)
-                  <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Weerhouden</a>
+                <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Weerhouden</a>
                 @else
-                  <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Publiceren</a>
+                <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Publiceren</a>
                 @endif
               </td>
             </tr>
-          @endforeach
+            @endforeach
+            </tbody>
           </table>
         @endif
       @else
