@@ -48,26 +48,56 @@
     @endforeach
   </div>
   @endif
-  <div class="container wat p-5">
+  <div class=" container wat p-5">
     <h1 class="text-center red">Speel ons spel en test je kennis!</h1>
-    <div #id='game' class="container bggrey p-5 pointer">
-      <div class="webgl-content"  >
-        <div id="gameContainer"  ></div>
-        <div class="footer">
-          <div class="webgl-logo"></div>
-          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-          <div class="title">3WEB23D</div>
-        </div>
+    <div id='game' class="game-wrapper container bggrey p-5 pointer">
+      <div class="webgl-content" onclick="startGame()">
+      <div id="overlay" class='shadow d-flex justify-content-center align-items-center flex-column'>
+        <img src="{{ asset('images/controller.png') }}" alt="Speel het spel">
+        <h4>Klik om te starten!</h4>
+      </div>
+      <div id="gameContainer"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">3WEB23D</div>
+      </div>
       </div>
     </div>
   </div>
-
-  @push('scripts')
+  @endsection
+  @push('styles')
+  <link rel="stylesheet" href=" {{asset('game/TemplateData/style.css')}} ">
+  <style>
+    .game-wrapper {
+      position: relative;
+      min-height: 50vh;
+    }
+    #overlay {
+      background-image: url('images/bg-game.png');
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+    }
+  </style>
+  @endpush
+  @push('top-scripts')
+  <script src="{{asset('game/TemplateData/UnityProgress.js')}}"></script>  
+  <script src=" {{asset('game/Build/UnityLoader.js')}}"></script>
   <script>
-    // $( ".webgl-content" ).click(function() {
-    //   gameInstance.SetFullscreen(1);
-    //   alert('geklikt');
-    // });
+    var i =0;
+    var gameInstance;
+    function startGame(){
+      if(i === 0){
+        gameInstance = UnityLoader.instantiate("gameContainer", "  {{asset('game/Build/Build.json')}} ", {onProgress: UnityProgress});
+        i++;
+      }
+      var overlay = document.getElementById('overlay');
+      $(overlay).remove();
+    }
   </script>
   @endpush
-@endsection

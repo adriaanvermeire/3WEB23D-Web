@@ -10,13 +10,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
       crossorigin="anonymous">
   <link rel="icon" href="{!! asset('images/logo_antwerpen.png') !!}">
-  <script src="{{asset('game/TemplateData/UnityProgress.js')}}"></script>  
-  <script src=" {{asset('game/Build/UnityLoader.js')}}"></script>
-  <!-- <link rel="stylesheet" href=" {{asset('game/TemplateData/style.css')}} "> -->
-  <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "  {{asset('game/Build/Build.json')}} ", {onProgress: UnityProgress});
-  </script>
   <title>@yield('title')</title>
+  @stack('top-scripts')
   @stack('styles')
 </head>
 @php
