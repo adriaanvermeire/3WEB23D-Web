@@ -85,7 +85,7 @@ class TestimonialController extends Controller
 
   function highlight($id) 
   {
-    $current = Testimonial::where('highlight', 1)->firstOrFail();
+    $current = Testimonial::where('highlight', 1)->first();
     if(isset($current)){
       $current->highlight = false;
       $current->save();
@@ -98,7 +98,7 @@ class TestimonialController extends Controller
     } else {
       $message = 'De highlight werd van het verhaal gehaald.';            
     }
-    return redirect()->route('admin.testimonials')->with('status', $message);
+    return redirect()->route('admin.index')->with('status', $message);
   }
 
   function review($id)
