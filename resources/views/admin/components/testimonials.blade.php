@@ -4,6 +4,7 @@
       Hun verhalen
     @endslot
     @slot('buttons')
+      <a href="{!! route('testimonials.index') !!}" class="btn btn-outline-primary">Naar de pagina</a>
     @endslot
     @slot('description')
       Hier heb je een overzicht van alle verhalen. Indien er nieuwe verhalen zijn, dienen ze nagekeken te worden en vervolgens gepubliceerd of weerhouden worden.

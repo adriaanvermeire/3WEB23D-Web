@@ -4,6 +4,7 @@
       Hoe reageren?
     @endslot
     @slot('buttons')
+      <a href="{!! route('reaction.index') !!}" class="btn btn-outline-primary">Naar de pagina</a>
       <a class="btn btn-success ml-2 text-white" href='{!! route('admin.create-scenario') !!}'><i class="fas fa-plus"></i> Toevoegen</a>
     @endslot
     @slot('description')
