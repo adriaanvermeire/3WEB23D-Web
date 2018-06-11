@@ -11,7 +11,7 @@
     @endslot
     @slot('body')
       @if (count($unseen) > 0 || count($seen) > 0)
-        <table class='table'>
+        <table class='table table-sm table-responsive'>
           <thead>
             <tr>
               <th></th>
@@ -37,7 +37,7 @@
               <td>@truncate($body, 50)</td>
               <td><date>{{ $testimonial->created_at }}</date></td>
               <td class='d-flex justify-content-end'>
-                <div class="btn-group">
+                <div class="btn-group-vertical">
                   <a href='{!! route('admin.accept_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-success btn-sm">Publiceren</a>
                   <a href='{!! route('admin.reject_testimonial', ['id' => $testimonial->id]) !!}' class="btn btn-danger btn-sm">Weerhouden</a>
                 </div>
