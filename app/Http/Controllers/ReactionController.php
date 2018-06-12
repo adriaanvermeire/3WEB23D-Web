@@ -36,7 +36,7 @@ class ReactionController extends Controller
     public function post(Request $request)
     {
       $request->validate([
-        'description' => 'required|string|min:10|unique:how_scenarios',
+        'description' => 'required|string|min:10',
         'good' => 'required|string|min:10',
         'bad' => 'required|string|min:10',
       ]);
