@@ -5,6 +5,7 @@
 @section('content')
 <div class="container mt-3">
   <h1 class="text-center red">Hun verhaal</h1>
+  <p class='text-center'>Hier delen anderen hun persoonlijke ervaringen met seksueel grensoverschrijdend gedrag. <br> Probeer ervan te leren, steek er iets van op en als je zelf iets wil delen, kan het met onderstaande knop.</p>
 </div>
 <div class="container mt-3">
   <a href="{!! route('testimonials.create') !!}" class="btn buttonBlue shadow link white">Deel je verhaal</a>
