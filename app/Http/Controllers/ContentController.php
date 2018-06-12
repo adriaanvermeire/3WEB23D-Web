@@ -17,7 +17,7 @@ class ContentController extends Controller
     public function update(Request $request)
     {
       $request->validate([
-        'title' => 'required|string|min:4|unique:contents,'.$request->id,
+        'title' => 'required|string|min:4',
         'body' => 'nullable|string|min:20',
       ]);
       
